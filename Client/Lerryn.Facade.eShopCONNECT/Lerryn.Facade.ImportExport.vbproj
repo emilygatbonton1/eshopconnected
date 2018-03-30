@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{74ED9D36-D8A3-4429-B4E3-B0287BE665CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lerryn.Facade.ImportExport</RootNamespace>
+    <AssemblyName>Lerryn.Facade.ImportExport</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\DLL\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DefineTrace>true</DefineTrace>
+    <DocumentationFile>bin\Debug\Lerryn.Facade.eShopCONNECT.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\DLL\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DefineTrace>true</DefineTrace>
+    <DocumentationFile>bin\Release\Lerryn.Facade.eShopCONNECT.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>bin\Debug\Lerryn.Facade.eShopCONNECT.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\Lerryn.Facade.eShopCONNECT.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="System" />
+    <Import Include="System.Data" />
+    <Import Include="System.Text" />
+    <Import Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ChilkatDotNet45, Version=9.4.1.0, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL\ChilkatDotNet45.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Business.Base, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Business.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Connectivity.Database.Configuration.Design, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Connectivity.Database.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Extendable.Base, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Extendable.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Extendable.CRM, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Extendable.CRM.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Extendable.Customer, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Extendable.Customer.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Extendable.ECommerce, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Extendable.ECommerce.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Extendable.Inventory, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Extendable.Inventory.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Facade.Base, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Facade.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Facade.CRM, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Facade.CRM.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Facade.Customer, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Facade.Customer.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Facade.ECommerce, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Facade.ECommerce.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Facade.Inventory, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Facade.Inventory.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Framework.Base, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Framework.CRM, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Framework.CRM.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Framework.Customer, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Framework.Customer.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Framework.ECommerce, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Framework.ECommerce.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Framework.Inventory, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Framework.Inventory.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Licensing.Base, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Licensing.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Presentation.Base, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Presentation.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Presentation.Customer, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Interprise.Presentation.Customer.dll</HintPath>
+    </Reference>
+    <Reference Include="MarketplaceWebService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b8fe89ce8c5834af, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\MarketplaceWebService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mark.kee\AppData\Local\Microsoft\VisualStudio\12.0\Extensions\ntnguiut.obz\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\GlobalAssemblyInfo.vb">
+      <Link>GlobalAssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="AmazonImportFacade.vb" />
+    <Compile Include="AmazonMWSConnector.vb" />
+    <Compile Include="AmazonMWSThrottling.vb" />
+    <Compile Include="ASPStorefrontConnector.vb" />
+    <Compile Include="ASPStorefrontImportFacade.vb" />
+    <Compile Include="Business Objects\ErrorConditionList.vb" />
+    <Compile Include="ChannelAdvImportFacade.vb" />
+    <Compile Include="eBayXMLConnector.vb" />
+    <Compile Include="ErrorNotification.vb" />
+    <Compile Include="ImportExportConfigFacade.vb" />
+    <Compile Include="ImportExportProcessFacade.vb" />
+    <Compile Include="ImportExportFacade.vb" />
+    <Compile Include="LicenceFunctions.vb" />
+    <Compile Include="MagentoImportFacade.vb" />
+    <Compile Include="MagentoSOAPConnector.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ASPDotNetStorefront\Reference.vb" />
+    <Compile Include="WebFunctions.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\ASPDotNetStorefront\ipx.wsdl" />
+    <None Include="Web References\ASPDotNetStorefront\Reference.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web References\ASPDotNetStorefront\ipx.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\Lerryn.Extendable.eShopCONNECT\Lerryn.Extendable.ImportExport.vbproj">
+      <Project>{0e11cedd-02ad-4511-941a-429c4b7bdb52}</Project>
+      <Name>Lerryn.Extendable.ImportExport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\Lerryn.Framework.eShopCONNECT\Lerryn.Framework.ImportExport.vbproj">
+      <Project>{b6930289-05b4-493a-b92e-7c71406617cf}</Project>
+      <Name>Lerryn.Framework.ImportExport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

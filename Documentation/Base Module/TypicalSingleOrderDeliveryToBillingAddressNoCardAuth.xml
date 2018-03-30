@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eShopCONNECT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ImportType>Order</ImportType>
+	<Source>
+		<SourceName>Sample File</SourceName>
+		<SourceCode>GenericXMLImport</SourceCode>
+	</Source>
+	<Order>
+		<CustomerOrderRef>1759761</CustomerOrderRef>
+		<SourceOrderRef>3782287</SourceOrderRef>
+		<SourceWebSiteRef>Demo</SourceWebSiteRef>
+                <SourceMerchantID>M52631</SourceMerchantID>
+		<OrderDate>2008-06-15</OrderDate>
+		<OrderCurrency>GBP</OrderCurrency>
+		<BillingDetails>
+			<Customer>
+				<SourceCustomerID>851348912</SourceCustomerID>
+				<ISCustomerCode></ISCustomerCode>
+				<NamePrefix>Mr &amp; Mrs</NamePrefix>
+				<FirstName>Tim</FirstName>
+				<LastName>Sheppard</LastName>
+				<Company>Lerryn Business Solutions Ltd</Company>
+				<HomePhone>01614862800</HomePhone>
+				<WorkPhone>01614862800</WorkPhone>
+				<MobilePhone></MobilePhone>
+				<Email>TimSheppard@lerryn.com</Email>
+			</Customer>
+			<BillingAddress>
+				<Address>Lerryn House
+				Warren Road</Address>
+				<Town_City>Cheadle Hulme</Town_City>
+				<State></State>
+				<County>Cheshire</County>
+				<PostalCode>SK8 5AA</PostalCode>
+				<Country>United Kingdom</Country>
+			</BillingAddress>
+		</BillingDetails>
+		<Item>
+			<SourceItemPurchaseID>957891303</SourceItemPurchaseID>
+			<ISItemCode>ITEM-000002</ISItemCode>
+			<ItemDescription>Sample Item Description</ItemDescription>
+			<ItemQuantity>1</ItemQuantity>
+			<ItemUnitPrice>16.99</ItemUnitPrice>
+			<ItemSubTotal>16.99</ItemSubTotal>
+			<ItemTaxRate>15</ItemTaxRate>
+			<ItemTaxValue>2.55</ItemTaxValue>
+			<SpecialInstructions>
+				<SpecialInstructionType>Gift Wrapping</SpecialInstructionType>
+				<SpecialInstructionDetail>No Gift Wrap</SpecialInstructionDetail>
+			</SpecialInstructions>
+		</Item>
+		<OrderTotals>
+			<SubTotal>16.99</SubTotal>
+			<Shipping>5.00</Shipping>
+			<Tax>3.30</Tax>
+			<Total>25.29</Total>
+		</OrderTotals>
+	</Order>
+	<OrderCount>1</OrderCount>
+</eShopCONNECT>

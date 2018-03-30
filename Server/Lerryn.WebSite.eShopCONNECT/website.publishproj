@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+***********************************************************************************************
+website.publishproj
+
+WARNING: DO NOT MODIFY this file, it is used for the web publish process.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+***********************************************************************************************
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3583696b-5cbc-4752-8b68-c7afac4286a7}</ProjectGuid>
+    <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/Lerryn.WebSite.eShopCONNECT</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SourceWebProject>D:\Interprise\eShopCONNECT\Server\Lerryn.WebSite.eShopCONNECT</SourceWebProject>
+    <SourceWebMetabasePath>/IISExpress/7.5/LM/W3SVC/2/ROOT</SourceWebMetabasePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
+    <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
+    <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">1.0.0.0</AssemblyFileVersion>
+    <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ClientServer\Lerryn.Business.eShopCONNECT\Lerryn.Business.ImportExport.vbproj">
+      <Project>{B20E269E-5227-49B6-AFA3-370A9BE16752}</Project>
+      <Name>Lerryn.Business.ImportExport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Client\Lerryn.Facade.eShopCONNECT\Lerryn.Facade.ImportExport.vbproj">
+      <Project>{74ED9D36-D8A3-4429-B4E3-B0287BE665CD}</Project>
+      <Name>Lerryn.Facade.ImportExport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\Lerryn.Extendable.eShopCONNECT\Lerryn.Extendable.ImportExport.vbproj">
+      <Project>{0E11CEDD-02AD-4511-941A-429C4B7BDB52}</Project>
+      <Name>Lerryn.Extendable.ImportExport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\Lerryn.Framework.eShopCONNECT\Lerryn.Framework.ImportExport.vbproj">
+      <Project>{B6930289-05B4-493A-B92E-7C71406617CF}</Project>
+      <Name>Lerryn.Framework.ImportExport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
+</Project>

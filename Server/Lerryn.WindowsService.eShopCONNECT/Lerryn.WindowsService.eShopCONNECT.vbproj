@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{16B8FA35-6886-4B74-9604-424E8DD075EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Lerryn.WindowsService.eShopCONNECT.ServiceMain</StartupObject>
+    <RootNamespace>Lerryn.WindowsService.eShopCONNECT</RootNamespace>
+    <AssemblyName>Lerryn.WindowsService.eShopCONNECT</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Lerryn.WindowsService.eShopCONNECT.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Lerryn.WindowsService.eShopCONNECT.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\..\DLL\</OutputPath>
+    <DocumentationFile>Lerryn.WindowsService.eShopCONNECT.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\..\DLL\</OutputPath>
+    <DocumentationFile>Lerryn.WindowsService.eShopCONNECT.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>None</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interprise.Connectivity.Database.Configuration.Design, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL\Interprise.Connectivity.Database.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Extendable.Base, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL\Interprise.Extendable.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Facade.Base, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL\Interprise.Facade.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Framework.Base, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL\Interprise.Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Framework.Inventory, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL\Interprise.Framework.Inventory.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Licensing.Base, Version=15.0.0.179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL\Interprise.Licensing.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="LerrynFTP, Version=1.1.0.0, Culture=neutral, PublicKeyToken=a944ac3545ca8f49, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL\LerrynFTP.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Interprise" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Text" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\GlobalAssemblyInfo.vb">
+      <Link>GlobalAssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="AmazonImport.vb" />
+    <Compile Include="AmazonInventoryUpdate.vb" />
+    <Compile Include="AmazonStatusUpdate.vb" />
+    <Compile Include="ASPStoreFrontImport.vb" />
+    <Compile Include="ASPStorefrontInventoryUpdate.vb" />
+    <Compile Include="ASPStoreFrontStatusUpdate.vb" />
+    <Compile Include="ChannelAdvInventoryUpdate.vb" />
+    <Compile Include="ChannelAdvisorImport.vb" />
+    <Compile Include="ChannelAdvStatusUpdate.vb" />
+    <Compile Include="DynamicInstaller.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="eBayImport.vb" />
+    <Compile Include="eBayInventoryUpdate.vb" />
+    <Compile Include="eBayStatusUpdate.vb" />
+    <Compile Include="FileInput.vb" />
+    <Compile Include="FileOutput.vb" />
+    <Compile Include="General.vb" />
+    <Compile Include="InventoryUpdates.vb" />
+    <Compile Include="MagentoImport.vb" />
+    <Compile Include="MagentoInventoryUpdate.vb" />
+    <Compile Include="MagentoStatusUpdate.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProductCode.vb" />
+    <Compile Include="SearsComImport.vb" />
+    <Compile Include="SearsComStatusUpdate.vb" />
+    <Compile Include="ServiceMain.designer.vb">
+      <DependentUpon>ServiceMain.vb</DependentUpon>
+      <Link>ServiceMain.designer.vb</Link>
+    </Compile>
+    <Compile Include="ServiceMain.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="ShopComInventoryUpdate.vb" />
+    <Compile Include="ShopComStatusUpdate.vb" />
+    <Compile Include="StatusUpdates.vb" />
+    <Compile Include="ThreeDCartImport.vb" />
+    <Compile Include="ThreeDCartInventoryUpdate.vb" />
+    <Compile Include="ThreeDCartStatusUpdate.vb" />
+    <Compile Include="VolusionImport.vb" />
+    <Compile Include="VolusionStatusUpdate.vb" />
+    <Compile Include="WebPollIO.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceMain.resx">
+      <DependentUpon>ServiceMain.vb</DependentUpon>
+      <Link>ServiceMain.resx</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Client\Lerryn.Facade.eShopCONNECT\Lerryn.Facade.ImportExport.vbproj">
+      <Project>{74ed9d36-d8a3-4429-b4e3-b0287be665cd}</Project>
+      <Name>Lerryn.Facade.ImportExport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\Lerryn.Extendable.eShopCONNECT\Lerryn.Extendable.ImportExport.vbproj">
+      <Project>{0e11cedd-02ad-4511-941a-429c4b7bdb52}</Project>
+      <Name>Lerryn.Extendable.ImportExport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\Lerryn.Framework.eShopCONNECT\Lerryn.Framework.ImportExport.vbproj">
+      <Project>{b6930289-05b4-493a-b92e-7c71406617cf}</Project>
+      <Name>Lerryn.Framework.ImportExport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

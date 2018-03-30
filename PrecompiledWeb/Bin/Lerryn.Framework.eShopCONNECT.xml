@@ -1,0 +1,1126 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Lerryn.Framework.ImportExport
+</name>
+</assembly>
+<members>
+<member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerShipToDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerCreditCardTypeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerClassTemplateDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemShippingMethodGroupDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerInvoiceImportExportStatusView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerSalesOrderImportExportStatusView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemPaymentTypeViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemCountryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerCouponViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemShippingMethodDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemShippingMethodGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemPaymentTermGroupDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.XMLConfigSettingsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemSourceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemCurrencyDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonASIN_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonBrowseNodeLastModifiedView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportInventoryTagTemplateLastModifiedView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportShopComAttributeCatLastModifiedView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportShopComAttributeCategories_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryItemDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryWarehouseViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMatrixItemsToPublishOnShopCOM_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonSearchTermsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonMessageSettings_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemCompanyInformationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CRMLeadImportExportView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonBrowseNodes_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMatrixItemsToPublishOnAmazon_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonXMLTypeDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonXMLTypeDetailsLastModifiedView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryShopComTagDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonTagDetailTemplateView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportInventoryTagTemplate_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryShopComTagDetailTemplateView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportActionStatus_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportInventoryActionStatus_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerImportExportView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.System_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.UsageInPeriodDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMagentoCategories_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryItemKitPricingDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryASPStorefrontCategories_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemManufacturerSourceID_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryASPStorefrontTagDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.DisplayedSourcesView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemAttributeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemAttributeValueDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonFiles_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAttributeViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerSalesOrderDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerSalesOrderDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerInvoiceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerInvoiceDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportEBaySiteSettings_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryShopComDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryEBayDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynLicences_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryChannelAdvTagDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryChannelAdvDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.ActivationAccountDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAttributeValueView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryASPStorefrontDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportSourceOrdersToRetry_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonSettlementDetail_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonSettlement_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonTagDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportPaymentTypes_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryItemMagentoSummaryView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportEBayCategories_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMagentoTagDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportCategoryMappingView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.MagentoAttributeSetsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.MagentoAttributeSetGroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.MagentoAttributeGroupAttributesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportMagentoAttributes_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportMagentoAttributeValues_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemAttributeMagentoMappedView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemAttributeValueMagentoMappedView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportConfig_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventorySpecialPricingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMagentoDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportDeliveryMethods_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.Inventory3DCartTagDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.Inventory3DCartCategories_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.Inventory3DCartDetails_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemCategoryViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventorySellingDepartmentViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportSKUAliasView_DEV000221DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SaleItemViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerShipToRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerCreditCardTypeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerClassTemplateDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemShippingMethodGroupDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerInvoiceImportExportStatusView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerSalesOrderImportExportStatusView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemPaymentTypeViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemCountryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerCouponViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemShippingMethodRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemShippingMethodGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemPaymentTermGroupDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.XMLConfigSettingsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemSourceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemCurrencyRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonASIN_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonBrowseNodeLastModifiedView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportInventoryTagTemplateLastModifiedView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportShopComAttributeCatLastModifiedView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportShopComAttributeCategories_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryItemDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryWarehouseViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMatrixItemsToPublishOnShopCOM_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonSearchTermsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonMessageSettings_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemCompanyInformationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CRMLeadImportExportView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonBrowseNodes_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMatrixItemsToPublishOnAmazon_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonXMLTypeDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonXMLTypeDetailsLastModifiedView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryShopComTagDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonTagDetailTemplateView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportInventoryTagTemplate_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryShopComTagDetailTemplateView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportActionStatus_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportInventoryActionStatus_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerImportExportView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.System_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.UsageInPeriodRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMagentoCategories_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryItemKitPricingDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryASPStorefrontCategories_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemManufacturerSourceID_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryASPStorefrontTagDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.DisplayedSourcesView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemAttributeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemAttributeValueRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonFiles_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAttributeViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerSalesOrderRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerSalesOrderDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerInvoiceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerInvoiceDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportEBaySiteSettings_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryShopComDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryEBayDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynLicences_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryChannelAdvTagDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryChannelAdvDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.ActivationAccountDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAttributeValueView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryASPStorefrontDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportSourceOrdersToRetry_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonSettlementDetail_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonSettlement_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonTagDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportPaymentTypes_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryItemMagentoSummaryView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportEBayCategories_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMagentoTagDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportCategoryMappingView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.MagentoAttributeSetsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.MagentoAttributeSetGroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.MagentoAttributeGroupAttributesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportMagentoAttributes_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportMagentoAttributeValues_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemAttributeMagentoMappedView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemAttributeValueMagentoMappedView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportConfig_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventorySpecialPricingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMagentoDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportDeliveryMethods_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.Inventory3DCartTagDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.Inventory3DCartCategories_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.Inventory3DCartDetails_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemCategoryViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventorySellingDepartmentViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportSKUAliasView_DEV000221Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SaleItemViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerShipToRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerCreditCardTypeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerClassTemplateDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemShippingMethodGroupDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerInvoiceImportExportStatusView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerSalesOrderImportExportStatusView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemPaymentTypeViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemCountryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerCouponViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemShippingMethodRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemShippingMethodGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemPaymentTermGroupDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.XMLConfigSettingsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemSourceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemCurrencyRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonASIN_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonBrowseNodeLastModifiedView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportInventoryTagTemplateLastModifiedView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportShopComAttributeCatLastModifiedView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportShopComAttributeCategories_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryItemDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryWarehouseViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMatrixItemsToPublishOnShopCOM_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonSearchTermsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonMessageSettings_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemCompanyInformationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CRMLeadImportExportView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonBrowseNodes_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMatrixItemsToPublishOnAmazon_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonXMLTypeDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonXMLTypeDetailsLastModifiedView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryShopComTagDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonTagDetailTemplateView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportInventoryTagTemplate_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryShopComTagDetailTemplateView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportActionStatus_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportInventoryActionStatus_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerImportExportView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.System_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.UsageInPeriodRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMagentoCategories_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryItemKitPricingDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryASPStorefrontCategories_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemManufacturerSourceID_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryASPStorefrontTagDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.DisplayedSourcesView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemAttributeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemAttributeValueRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonFiles_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAttributeViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerSalesOrderRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerSalesOrderDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerInvoiceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.CustomerInvoiceDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportEBaySiteSettings_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryShopComDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryEBayDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynLicences_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryChannelAdvTagDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryChannelAdvDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.ActivationAccountDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAttributeValueView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryASPStorefrontDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportSourceOrdersToRetry_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonSettlementDetail_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportAmazonSettlement_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryAmazonTagDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportPaymentTypes_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryItemMagentoSummaryView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportEBayCategories_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMagentoTagDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportCategoryMappingView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.MagentoAttributeSetsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.MagentoAttributeSetGroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.MagentoAttributeGroupAttributesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportMagentoAttributes_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportMagentoAttributeValues_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemAttributeMagentoMappedView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemAttributeValueMagentoMappedView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportConfig_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventorySpecialPricingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventoryMagentoDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportDeliveryMethods_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.Inventory3DCartTagDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.Inventory3DCartCategories_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.Inventory3DCartDetails_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SystemCategoryViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.InventorySellingDepartmentViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.LerrynImportExportSKUAliasView_DEV000221RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset.SaleItemViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Lerryn.Framework.ImportExport.DatasetComponent.ImportExportDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Lerryn.Framework.ImportExport.DatasetGateway.ImportExportDatasetGatewaySerializer.DerivedType">
+	<summary>
+ Overrides the property Interprise.Framework.Base.DatasetGateway.BaseDatasetGatewaySerializer.DerivedType
+ </summary>
+	<value>The Type object of the gateway (ImportExportDatasetGateway)</value>
+	<returns>The Type object of the gateway (ImportExportDatasetGateway)</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

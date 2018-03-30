@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eShopCONNECT>
+	<Source>
+		<SourceName>Sample File</SourceName>
+		<SourceCode>GenericXMLImport</SourceCode>
+		<Authentication>PassW0rd</Authentication>
+	</Source>
+	<StatusRequest>
+		<CustomerOrderRef>2179372</CustomerOrderRef>
+		<SourceOrderRef>2456435</SourceOrderRef>
+		<SourceWebSiteRef>Demo</SourceWebSiteRef>
+		<SourceMerchantID></SourceMerchantID>
+		<SourceCustomerID>123456789</SourceCustomerID>
+		<ISCustomerCode></ISCustomerCode>
+		<RecordType>Order</RecordType>
+		<ISRecordCode></ISRecordCode>
+	</StatusRequest>
+	<StatusRequestCount>1</StatusRequestCount>
+</eShopCONNECT>

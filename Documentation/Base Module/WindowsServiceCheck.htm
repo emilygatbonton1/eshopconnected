@@ -1,0 +1,23 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>eShopCONNECT Windows Service</title>
+</head>
+
+<body style="font-family:arial">
+<h1>eShopCONNECT Windows Service</h1>
+<h2>How to check it is working properly</h2>
+<p>To check that the eShopCONNECT Windows Service is working properly, open the Services application on the computer, usually a server, where you installed the eShopCONNECT Windows Service.  The Service application can be found in the Administrative Tools section of the Control Panel.</p>
+<p>Check that the Lerryn eShopCONNECT for Interprise Service appears in the list of services, that it has a Status of Started and a Startup Type of Automatic.</p>
+<p>If the Lerryn eShopCONNECT for Interprise Service does NOT appear in the list of services, then click <a href="ServicesInstallAndConfig.htm">here</a> for information on how to install it and set it's configuration file.</p>
+<p>If either the Status or Startup Type are incorrect, select the Lerryn eShopCONNECT for Interprise Service, then right-click and select Properties from the popup menu.  Change the Startup Type if necessary, then click Apply.  If the Status is not showing as Started, click the Start button to start the Lerryn eShopCONNECT for Interprise Service.  A 
+Service Control popup window should appear with a progress bar and after some 10-15 seconds, the popup window should close and the Status should have changed 
+to Started.&nbsp; If an error occurs, it is likely that it's configuration file is not set properly and it cannot connect to your Interprise company database - 
+click <a href="ServicesInstallAndConfig.htm#Configuration">here</a> for information on how to set the configuration file.</p>
+<p>If the configuration file appears to be correct, check for error messages in the Windows Event logs.  The Event Viewer application can be found in the Administrative Tools section of the Control Panel.</p>
+<p>Look for Error messages in the Windows Application Log which mention eShopCONNECT - these messages should indicate the cause of the error.</p>
+
+</body>
+
+</html>

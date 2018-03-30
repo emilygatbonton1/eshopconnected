@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.aspdotnetstorefront.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.aspdotnetstorefront.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">AspDotNetStorefront Import Web Service I/F. NOTE: You may have to reset the store cache after imports to make all new items live! Also, this interface does not support any setting of IsImport flags, and imports cannot be undone.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.aspdotnetstorefront.com/">
+      <s:element name="DoItWSE3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlInputRequestString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoItWSE3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DoItWSE3Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoItUsernamePwd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenticationEMail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenticationPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XmlInputRequestString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoItUsernamePwdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DoItUsernamePwdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoIt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenticationEMail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenticationPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XmlInputRequestString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoItResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DoItResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DoItWSE3SoapIn">
+    <wsdl:part name="parameters" element="tns:DoItWSE3" />
+  </wsdl:message>
+  <wsdl:message name="DoItWSE3SoapOut">
+    <wsdl:part name="parameters" element="tns:DoItWSE3Response" />
+  </wsdl:message>
+  <wsdl:message name="DoItUsernamePwdSoapIn">
+    <wsdl:part name="parameters" element="tns:DoItUsernamePwd" />
+  </wsdl:message>
+  <wsdl:message name="DoItUsernamePwdSoapOut">
+    <wsdl:part name="parameters" element="tns:DoItUsernamePwdResponse" />
+  </wsdl:message>
+  <wsdl:message name="DoItSoapIn">
+    <wsdl:part name="parameters" element="tns:DoIt" />
+  </wsdl:message>
+  <wsdl:message name="DoItSoapOut">
+    <wsdl:part name="parameters" element="tns:DoItResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AspDotNetStorefront_x0020_Import_x0020_WebServiceSoap">
+    <wsdl:operation name="DoItWSE3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">XmlDocument Input (as String). XmlDocument Output. This method requires Microsoft Web Services 3 UsernameToken authentication! When using WSE3 authentication, you must send in the full admin hashed password (you can find this in the master database record for the admin user customer record)</wsdl:documentation>
+      <wsdl:input message="tns:DoItWSE3SoapIn" />
+      <wsdl:output message="tns:DoItWSE3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DoItUsernamePwd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">XmlDocument Input (as String). XmlDocument Output. This method is less secure, but does not require Microsoft Web Services 3 UsernameToken authentication!. This method can be used over HTTPS to do username and password check on the call itself. Password should be clear text master password here.</wsdl:documentation>
+      <wsdl:input message="tns:DoItUsernamePwdSoapIn" />
+      <wsdl:output message="tns:DoItUsernamePwdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DoIt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">XmlDocument Input (as String). XmlDocument Output. This method is less secure, but does not require Microsoft Web Services 3 UsernameToken authentication!. This method can be used over HTTPS to do username and password check on the call itself. Password should be clear text master password here. This routine is now obsolete, please use DoItUsernamePassword instead</wsdl:documentation>
+      <wsdl:input message="tns:DoItSoapIn" />
+      <wsdl:output message="tns:DoItSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AspDotNetStorefront_x0020_Import_x0020_WebServiceSoap" type="tns:AspDotNetStorefront_x0020_Import_x0020_WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoItWSE3">
+      <soap:operation soapAction="http://www.aspdotnetstorefront.com/DoItWSE3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoItUsernamePwd">
+      <soap:operation soapAction="http://www.aspdotnetstorefront.com/DoItUsernamePwd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoIt">
+      <soap:operation soapAction="http://www.aspdotnetstorefront.com/DoIt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AspDotNetStorefront_x0020_Import_x0020_WebServiceSoap12" type="tns:AspDotNetStorefront_x0020_Import_x0020_WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoItWSE3">
+      <soap12:operation soapAction="http://www.aspdotnetstorefront.com/DoItWSE3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoItUsernamePwd">
+      <soap12:operation soapAction="http://www.aspdotnetstorefront.com/DoItUsernamePwd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoIt">
+      <soap12:operation soapAction="http://www.aspdotnetstorefront.com/DoIt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AspDotNetStorefront_x0020_Import_x0020_WebService">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">AspDotNetStorefront Import Web Service I/F. NOTE: You may have to reset the store cache after imports to make all new items live! Also, this interface does not support any setting of IsImport flags, and imports cannot be undone.</wsdl:documentation>
+    <wsdl:port name="AspDotNetStorefront_x0020_Import_x0020_WebServiceSoap" binding="tns:AspDotNetStorefront_x0020_Import_x0020_WebServiceSoap">
+      <soap:address location="http://isdemo.staging.vortx.com/ipx.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AspDotNetStorefront_x0020_Import_x0020_WebServiceSoap12" binding="tns:AspDotNetStorefront_x0020_Import_x0020_WebServiceSoap12">
+      <soap12:address location="http://isdemo.staging.vortx.com/ipx.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

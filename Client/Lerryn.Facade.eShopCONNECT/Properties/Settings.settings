@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Lerryn_Facade_ImportExport_AspDotNetStorefront_x0020_Import_x0020_WebService" Type="(Web Service URL)" Scope="User">
+      <Value Profile="(Default)">http://isdemo.staging.vortx.com/ipx.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

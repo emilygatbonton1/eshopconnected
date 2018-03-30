@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eShopCONNECT>
+	<ImportType>Order</ImportType>
+	<Source>
+		<SourceName>Sample File</SourceName>
+		<SourceCode>GenericXMLImport</SourceCode>
+		<Authentication>PassW0rd</Authentication>
+	</Source>
+	<Order>
+		<CustomerOrderRef>1759761</CustomerOrderRef>
+		<SourceOrderRef>3782287</SourceOrderRef>
+		<SourceWebSiteRef>Demo</SourceWebSiteRef>
+                <SourceMerchantID>M52631</SourceMerchantID>
+		<OrderDate>2008-06-15</OrderDate>
+		<OrderCurrency>GBP</OrderCurrency>
+		<CustomerSalesCoupon>eShopCONNECT</CustomerSalesCoupon>
+		<CustomField FieldName="CustomerSalesOrderTableField_C"></CustomField>
+		<BillingDetails>
+			<Customer>
+				<SourceCustomerID>851348912</SourceCustomerID>
+				<ISCustomerCode></ISCustomerCode>
+				<NamePrefix>Mr &amp; Mrs</NamePrefix>
+				<FirstName>Tim</FirstName>
+				<LastName>Sheppard</LastName>
+				<Company>Lerryn Business Solutions Ltd</Company>
+				<HomePhone>01614862800</HomePhone>
+				<WorkPhone>01614862800</WorkPhone>
+				<MobilePhone></MobilePhone>
+				<Email>TimSheppard@lerryn.com</Email>
+				<CustomField FieldName="CustomerTableField_C"></CustomField>
+			</Customer>
+			<BillingAddress>
+				<Address>Lerryn House
+Warren Road</Address>
+				<Town_City>Cheadle Hulme</Town_City>
+				<State></State>
+				<County>Cheshire</County>
+				<PostalCode>SK8 5AA</PostalCode>
+				<Country>United Kingdom</Country>
+			</BillingAddress>
+		</BillingDetails>
+		<ShippingDetails>
+			<Customer>
+				<NamePrefix>Mr</NamePrefix>
+				<FirstName>Tim</FirstName>
+				<LastName>Sheppard</LastName>
+				<Company>Lerryn Business Solutions Ltd</Company>
+				<Telephone>01614862800</Telephone>
+				<Email>TimSheppard@lerryn.com</Email>
+			</Customer>
+			<ShippingAddress>
+				<Address>Lerryn House
+Warren Road</Address>
+				<Town_City>Cheadle Hulme</Town_City>
+				<State></State>
+				<County>Cheshire</County>
+				<PostalCode>SK8 5AA</PostalCode>
+				<Country>United Kingdom</Country>
+			</ShippingAddress>
+			<ShippingMethod>Standard Delivery Charge</ShippingMethod>
+			<ShippingMethodGroup>Default</ShippingMethodGroup>
+		</ShippingDetails>
+		<PaymentDetails>
+			<PaymentMethod>Credit Card</PaymentMethod>
+			<CreditCardDetails>
+				<NameOnCard>Tim Sheppard</NameOnCard>
+				<CardType>VISA</CardType>
+				<CardIssuer></CardIssuer>
+				<CardNumber>4555720202021105</CardNumber>
+				<CardStartDate></CardStartDate>
+				<CardExpiryDate>04/09</CardExpiryDate>
+				<CardSecurityNumber>321</CardSecurityNumber>
+				<CardIssueNumber></CardIssueNumber>
+			</CreditCardDetails>
+		</PaymentDetails>
+		<Item>
+			<SourceItemPurchaseID>957891303</SourceItemPurchaseID>
+			<ISItemCode>ITEM-000002</ISItemCode>
+			<ISItemName></ISItemName>
+			<ItemDescription>Sample Item Description</ItemDescription>
+			<ItemQuantity>1</ItemQuantity>
+			<ItemUnitPrice>16.99</ItemUnitPrice>
+			<ItemSubTotal>16.99</ItemSubTotal>
+			<ItemTaxRate>15</ItemTaxRate>
+			<ItemTaxValue>2.55</ItemTaxValue>
+			<SourceItemCommission>0.28</SourceItemCommission>
+			<SpecialInstructions>
+				<SpecialInstructionType>Gift Wrapping</SpecialInstructionType>
+				<SpecialInstructionDetail>No Gift Wrap</SpecialInstructionDetail>
+			</SpecialInstructions>
+			<CustomField FieldName="CustomerSalesOrderDetailTableField_C"></CustomField>
+		</Item>
+		<Item>
+			<SourceItemPurchaseID>56891246</SourceItemPurchaseID>
+			<ISItemCode>ITEM-000001</ISItemCode>
+			<ISItemName></ISItemName>
+			<ItemDescription>Second Item Description</ItemDescription>
+			<ItemDropShip>Yes</ItemDropShip>
+			<ItemDropShipReference>DHL31321</ItemDropShipReference>
+			<ItemQuantity>5</ItemQuantity>
+			<ItemUnitPrice>2.99</ItemUnitPrice>
+			<ItemSubTotal>14.95</ItemSubTotal>
+			<ItemTaxRate>15</ItemTaxRate>
+			<ItemTaxValue>2.24</ItemTaxValue>
+		</Item>
+		<OrderTotals>
+			<SubTotal>31.94</SubTotal>
+			<Shipping>8.00</Shipping>
+			<Tax>5.99</Tax>
+			<Total>45.93</Total>
+		</OrderTotals>
+		<CustomerComments/>
+	</Order>
+	<OrderCount>1</OrderCount>
+</eShopCONNECT>

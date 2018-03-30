@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eShopCONNECT>
+	<ImportType>Prospect</ImportType>
+	<Source>
+		<SourceName>Sample File</SourceName>
+		<SourceCode>GenericXMLImport</SourceCode>
+		<Authentication>PassW0rd</Authentication>
+	</Source>
+	<Prospect>
+		<SourceProspectID>851348912</SourceProspectID>
+		<SourceWebSiteRef>Demo</SourceWebSiteRef>
+		<CustomField FieldName="CustomerTableField_C"></CustomField>
+		<TradingCurrency>GBP</TradingCurrency>
+		<BillingDetails>
+			<Contact>
+				<NamePrefix>Mr &amp; Mrs</NamePrefix>
+				<FirstName>Tim</FirstName>
+				<LastName>Sheppard</LastName>
+				<Company>Lerryn Business Solutions Ltd</Company>
+				<HomePhone>01614862800</HomePhone>
+				<WorkPhone>01614862800</WorkPhone>
+				<MobilePhone></MobilePhone>
+				<Email>TimSheppard@lerryn.com</Email>
+			</Contact>
+			<BillingAddress>
+				<Address>Lerryn House
+Warren Road</Address>
+				<Town_City>Cheadle Hulme</Town_City>
+				<State></State>
+				<County>Cheshire</County>
+				<PostalCode>SK8 5AA</PostalCode>
+				<Country>United Kingdom</Country>
+			</BillingAddress>
+		</BillingDetails>
+		<ShippingDetails>
+			<Contact>
+				<NamePrefix>Mr</NamePrefix>
+				<FirstName>Tim</FirstName>
+				<LastName>Sheppard</LastName>
+				<Company>Lerryn Business Solutions Ltd</Company>
+				<Telephone>01614862800</Telephone>
+				<Email>TimSheppard@lerryn.com</Email>
+			</Contact>
+			<ShippingAddress>
+				<Address>Lerryn House
+Warren Road</Address>
+				<Town_City>Cheadle Hulme</Town_City>
+				<State></State>
+				<County>Cheshire</County>
+				<PostalCode>SK8 5AA</PostalCode>
+				<Country>United Kingdom</Country>
+			</ShippingAddress>
+			<ShippingMethod>Standard Delivery Charge</ShippingMethod>
+			<ShippingMethodGroup>Default</ShippingMethodGroup>
+		</ShippingDetails>
+		<ProspectNotes/>
+		<Activity>
+			<StartDate>2009-07-15</StartDate>
+			<Type>Call</Type>
+			<Subject>Activity Subject</Subject>
+			<Category>Call Outbound</Category>
+			<Priority>Medium</Priority>
+			<AssignTo>Admin</AssignTo>
+			<Text>Activity detail</Text>
+		</Activity>
+	</Prospect>
+	<ProspectCount>1</ProspectCount>
+</eShopCONNECT>

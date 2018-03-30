@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eShopCONNECT>
+	<ImportType>Lead</ImportType>
+	<Source>
+		<SourceName>Sample File</SourceName>
+		<SourceCode>GenericXMLImport</SourceCode>
+		<Authentication>PassW0rd</Authentication>
+	</Source>
+	<Lead>
+		<SourceLeadID>851348912</SourceLeadID>
+		<SourceWebSiteRef>Demo</SourceWebSiteRef>
+		<CustomField FieldName="CRMLeadTableField_C"></CustomField>
+		<LeadDetails>
+			<Contact>
+				<NamePrefix>Mr &amp; Mrs</NamePrefix>
+				<FirstName>Tim</FirstName>
+				<LastName>Sheppard</LastName>
+				<Company>Lerryn Business Solutions Ltd</Company>
+				<Phone>01614862800</Phone>
+				<Fax>01614862800</Fax>
+				<MobilePhone></MobilePhone>
+				<Email>TimSheppard@lerryn.com</Email>
+				<Website></Website>
+			</Contact>
+			<Address>
+				<Address>Lerryn House
+Warren Road</Address>
+				<Town_City>Cheadle Hulme</Town_City>
+				<State></State>
+				<County>Cheshire</County>
+				<PostalCode>SK8 5AA</PostalCode>
+				<Country>United Kingdom</Country>
+			</Address>
+		</LeadDetails>
+		<LeadNotes/>
+		<Activity>
+			<StartDate>2009-07-15</StartDate>
+			<Type>Call</Type>
+			<Subject>Activity Subject</Subject>
+			<Category>Call Outbound</Category>
+			<Priority>Medium</Priority>
+			<AssignTo>Admin</AssignTo>
+			<Text>Activity detail</Text>
+		</Activity>
+	</Lead>
+	<LeadCount>1</LeadCount>
+</eShopCONNECT>

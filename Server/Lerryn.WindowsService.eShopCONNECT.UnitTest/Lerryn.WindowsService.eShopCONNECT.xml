@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Lerryn.WindowsService.eShopCONNECT
+</name>
+</assembly>
+<members>
+<member name="P:Lerryn.WindowsService.eShopCONNECT.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Lerryn.WindowsService.eShopCONNECT.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Lerryn.WindowsService.eShopCONNECT.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Lerryn.WindowsService.eShopCONNECT.ServiceInstaller.DynamicInstaller.GetContextParameter(System.String)">
+	<summary>
+ Return the value of the parameter in dictated by key
+ </summary>
+	<PARAM name="key">Context parameter key</PARAM>
+	<returns>Context parameter specified by key</returns>
+</member><member name="M:Lerryn.WindowsService.eShopCONNECT.ServiceInstaller.DynamicInstaller.OnBeforeInstall(System.Collections.IDictionary)">
+	<summary>
+ This method is run before the install process.
+ This method is overridden to set the following parameters:
+ service name (/name switch)
+ account type (/account switch)
+ for a user account user name (/user switch)
+ for a user account password (/password switch)
+ Note that when using a user account,
+ if the user name or password is not set,
+ the installing user is prompted for the credentials to use.
+ </summary>
+	<PARAM name="savedState"></PARAM>
+</member><member name="M:Lerryn.WindowsService.eShopCONNECT.ServiceInstaller.DynamicInstaller.OnBeforeUninstall(System.Collections.IDictionary)">
+	<summary>
+ Uninstall based on the service name
+ </summary>
+	<PARAM name="savedState"></PARAM>
+</member>
+</members>
+</doc>

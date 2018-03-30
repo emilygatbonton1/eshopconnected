@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eShopCONNECT>
+	<ImportType>Invoice</ImportType>
+	<Source>
+		<SourceName>Sample File</SourceName>
+		<SourceCode>GenericXMLImport</SourceCode>
+		<Authentication>PassW0rd</Authentication>
+	</Source>
+	<Invoice>
+		<CustomerOrderRef>2459771</CustomerOrderRef>
+		<SourceInvoiceRef>3583197</SourceInvoiceRef>
+		<SourceWebSiteRef>Demo</SourceWebSiteRef>
+                <SourceMerchantID>M52631</SourceMerchantID>
+		<InvoiceDate>2008-06-15</InvoiceDate>
+		<InvoiceCurrency>GBP</InvoiceCurrency>
+		<BillingDetails>
+			<Customer>
+				<SourceCustomerID>851348912</SourceCustomerID>
+				<ISCustomerCode></ISCustomerCode>
+				<NamePrefix>Mr &amp; Mrs</NamePrefix>
+				<FirstName>Tim</FirstName>
+				<LastName>Sheppard</LastName>
+				<Company>Lerryn Business Solutions Ltd</Company>
+				<HomePhone>01614862800</HomePhone>
+				<WorkPhone>01614862800</WorkPhone>
+				<MobilePhone></MobilePhone>
+				<Email>TimSheppard@lerryn.com</Email>
+			</Customer>
+			<BillingAddress>
+				<Address>Lerryn House
+Warren Road</Address>
+				<Town_City>Cheadle Hulme</Town_City>
+				<State></State>
+				<County>Cheshire</County>
+				<PostalCode>SK8 5AA</PostalCode>
+				<Country>United Kingdom</Country>
+			</BillingAddress>
+		</BillingDetails>
+		<ShippingDetails>
+			<Customer>
+				<NamePrefix>Mr</NamePrefix>
+				<FirstName>Tim</FirstName>
+				<LastName>Sheppard</LastName>
+				<Company>Lerryn Business Solutions Ltd</Company>
+				<Telephone>01614862800</Telephone>
+				<Email>TimSheppard@lerryn.com</Email>
+			</Customer>
+			<ShippingAddress>
+				<Address>Lerryn House
+Warren Road</Address>
+				<Town_City>Cheadle Hulme</Town_City>
+				<State></State>
+				<County>Cheshire</County>
+				<PostalCode>SK8 5AA</PostalCode>
+				<Country>United Kingdom</Country>
+			</ShippingAddress>
+			<ShippingMethod>Standard</ShippingMethod>
+			<ShippingMethodGroup>Default</ShippingMethodGroup>
+		</ShippingDetails>
+		<PaymentDetails>
+			<PaymentMethod>Credit Card</PaymentMethod>
+			<CreditCardDetails>
+				<NameOnCard>Tim Sheppard</NameOnCard>
+				<CardType>VISA</CardType>
+				<CardIssuer></CardIssuer>
+				<CardNumber>?????</CardNumber>
+				<CardStartDate></CardStartDate>
+				<CardExpiryDate>04/03</CardExpiryDate>
+				<CardSecurityNumber>321</CardSecurityNumber>
+				<CardIssueNumber></CardIssueNumber>
+			</CreditCardDetails>
+		</PaymentDetails>
+		<Item>
+			<SourceItemPurchaseID>957891303</SourceItemPurchaseID>
+			<ISItemCode>ITEM-000002</ISItemCode>
+			<ISItemName></ISItemName>
+			<ItemDescription>Sample Item Description</ItemDescription>
+			<ItemQuantity>1</ItemQuantity>
+			<ItemUnitPrice>16.99</ItemUnitPrice>
+			<ItemSubTotal>16.99</ItemSubTotal>
+			<ItemTaxRate>15</ItemTaxRate>
+			<ItemTaxValue>2.55</ItemTaxValue>
+			<SpecialInstructions>
+				<SpecialInstructionType>Gift Wrapping</SpecialInstructionType>
+				<SpecialInstructionDetail>No Gift Wrap</SpecialInstructionDetail>
+			</SpecialInstructions>
+		</Item>
+		<Item>
+			<SourceItemPurchaseID>56891246</SourceItemPurchaseID>
+			<ISItemCode>ITEM-000001</ISItemCode>
+			<ISItemName></ISItemName>
+			<ItemDescription>Second Item Description</ItemDescription>
+			<ItemQuantity>5</ItemQuantity>
+			<ItemUnitPrice>2.99</ItemUnitPrice>
+			<ItemSubTotal>14.95</ItemSubTotal>
+			<ItemTaxRate>15</ItemTaxRate>
+			<ItemTaxValue>2.24</ItemTaxValue>
+		</Item>
+		<InvoiceTotals>
+			<SubTotal>31.94</SubTotal>
+			<Shipping>5.99</Shipping>
+			<Tax>5.69</Tax>
+			<Total>43.62</Total>
+		</InvoiceTotals>
+		<CustomerComments/>
+	</Invoice>
+	<InvoiceCount>1</InvoiceCount>
+</eShopCONNECT>

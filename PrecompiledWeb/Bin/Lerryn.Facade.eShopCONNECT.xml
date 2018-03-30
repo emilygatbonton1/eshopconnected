@@ -1,0 +1,91 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Lerryn.Facade.ImportExport
+</name>
+</assembly>
+<members>
+<member name="E:Lerryn.Facade.ImportExport.ImportExportConfigFacade.BeforeInitialConfigDownload">
+	<summary>Occurs before Initial Config Download is initiated.</summary>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.#ctor">
+	<remarks/>
+</member><member name="E:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.DoItWSE3Completed">
+	<remarks/>
+</member><member name="E:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.DoItUsernamePwdCompleted">
+	<remarks/>
+</member><member name="E:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.DoItCompleted">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.DoItWSE3(System.String)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.DoItWSE3Async(System.String)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.DoItWSE3Async(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.DoItUsernamePwd(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.DoItUsernamePwdAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.DoItUsernamePwdAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.DoIt(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.DoItAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.DoItAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebServiceWse">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.#ctor">
+	<remarks/>
+</member><member name="E:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.DoItWSE3Completed">
+	<remarks/>
+</member><member name="E:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.DoItUsernamePwdCompleted">
+	<remarks/>
+</member><member name="E:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.DoItCompleted">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.DoItWSE3(System.String)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.DoItWSE3Async(System.String)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.DoItWSE3Async(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.DoItUsernamePwd(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.DoItUsernamePwdAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.DoItUsernamePwdAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.DoIt(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.DoItAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.DoItAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:Lerryn.Facade.ImportExport.ASPDotNetStorefront.AspDotNetStorefrontImportWebService">
+	<remarks/>
+</member><member name="T:Lerryn.Facade.ImportExport.ASPDotNetStorefront.DoItWSE3CompletedEventHandler">
+	<remarks/>
+</member><member name="P:Lerryn.Facade.ImportExport.ASPDotNetStorefront.DoItWSE3CompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Lerryn.Facade.ImportExport.ASPDotNetStorefront.DoItWSE3CompletedEventArgs">
+	<remarks/>
+</member><member name="T:Lerryn.Facade.ImportExport.ASPDotNetStorefront.DoItUsernamePwdCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Lerryn.Facade.ImportExport.ASPDotNetStorefront.DoItUsernamePwdCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Lerryn.Facade.ImportExport.ASPDotNetStorefront.DoItUsernamePwdCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Lerryn.Facade.ImportExport.ASPDotNetStorefront.DoItCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Lerryn.Facade.ImportExport.ASPDotNetStorefront.DoItCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Lerryn.Facade.ImportExport.ASPDotNetStorefront.DoItCompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>

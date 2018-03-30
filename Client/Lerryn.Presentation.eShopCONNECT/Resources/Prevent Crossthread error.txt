@@ -1,0 +1,1 @@
+DevExpress.Data.CurrencyDataController.DisableThreadingProblemsDetection = true

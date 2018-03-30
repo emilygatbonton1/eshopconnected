@@ -1,0 +1,31 @@
+﻿If the following tables/views are removed and re-sdded to the ImportExportDatased.xsd, 
+then the following manual actions are required
+
+LerrynImportExportCategoryMappingView_DEV000221
+   Set SourceCode_DEV000221, InstanceAccountID_DEV000221, SourceCategoryID_DEV000221 and SourceParentID_DEV000221 as Primary Key
+   Set Counter as AutoIncrement
+
+LerrynImportExportSKUAliasView_DEV000221
+   Set Counter as AutoIncrement
+
+Inventory3DCartTagDetails_DEV000221
+   Add Column DisplayedValue as System.String
+
+InventoryMagentoTagDetails_DEV000221
+   Add Column DisplayedValue as System.String
+
+InventorySellingDepartmentView
+	Add Column Select as System.Boolean
+
+SystemAttributeMagentoMappedView_DEV000221
+   Make sure there isn't Primary Key set on any field
+   Set InstanceID_DEV000221 and SourceAttributeID_DEV000221 as AllowDBNull
+   Set Publish, SourceDisplayName and UsedInMatrixGroups to NOT be ReadOnly
+
+SystemAttributeValueMagentoMappedView_DEV000221
+   Make sure there isn't Primary Key set on any field
+   Set InstanceID_DEV000221, SourceAttributeID_DEV000221 and SourceValueID_DEV000221 as AllowDBNull
+   Set Publish to NOT be ReadOnly
+
+SystemCategoryView
+	Add Column Select as System.Boolean
