@@ -2301,7 +2301,7 @@ Public Class ImportExportConfigFacade
                 ' Start of Code Added TJS 11/03/09
                 If Me.m_ImportExportDataset.XMLConfigSettings(iLoop).ConfigSettingName = "MerchantToken" Then ' TJS 22/03/13
                     ' Merchant Token (Was Merchant ID)
-                    If Not ValidateConnectorConfigStringSetting(iLoop, "MerchantToken", 30, True) Then ' TJS 19/08/10 TJS 22/03/13
+                    If Not ValidateConnectorConfigStringSetting(iLoop, "MerchantToken", 50, True) Then ' TJS 19/08/10 TJS 22/03/13
                         bConfigValid = False ' TJS 19/08/10
                     Else
                         ' start of code added TJS 02/12/11
@@ -3424,7 +3424,7 @@ Public Class ImportExportConfigFacade
             ElseIf Strings.Left(Me.m_ImportExportDataset.XMLConfigSettings(iLoop).ConfigGroup, 9) = "AmazonFBA" Then
                 If Me.m_ImportExportDataset.XMLConfigSettings(iLoop).ConfigSettingName = "MerchantToken" Then ' TJS 22/03/13
                     ' Merchant ID
-                    If Not ValidateConnectorConfigStringSetting(iLoop, "MerchantToken", 30, True) Then ' TJS 22/03/13
+                    If Not ValidateConnectorConfigStringSetting(iLoop, "MerchantToken", 50, True) Then ' TJS 22/03/13
                         bConfigValid = False
                     Else
                         For iCheckLoop = 0 To Me.m_ImportExportDataset.XMLConfigSettings.Count - 1
