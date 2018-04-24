@@ -1,25 +1,14 @@
 ' eShopCONNECT for Connected Business
 ' Module: ImportExportConfigFacade.vb
 '
-' This software is the copyright of Lerryn Business Solutions Ltd and
+' This software is the copyright of Connected Business and
 ' may not be copied, duplicated or modified other than as permitted
 ' in the licence agreement.  This software has been generated using 
-' the Interprise Suite SDK and may incorporate certain intellectual 
-' property of Interprise Software Solutions International Inc who's
+' the Connected Business SDK and may incorporate certain intellectual 
+' property of Interprise Solutions Inc. who's
 ' rights are hereby recognised.
 '
-'       © 2012 - 2014  Lerryn Business Solutions Ltd
-'                      2 East View
-'                      Bessie Lane
-'                      Bradwell
-'                      Hope Valley
-'                      S33 9HZ
-'
-'  Tel +44 (0)1433 621584
-'  Email Support@lerryn.com
-'
-' Lerryn is a Trademark of Lerryn Business Solutions Ltd
-' eShopCONNECT is a Trademark of Lerryn Business Solutions Ltd
+
 '-------------------------------------------------------------------
 '
 ' Last Updated - 01 May 2014
@@ -1915,7 +1904,7 @@ Public Class ImportExportConfigFacade
             ((m_BaseProductCode = ESHOPCONNECT_BASE_PRODUCT_CODE And ConnectorProductCode <> AMAZON_FBA_CONNECTOR_CODE) Or _
              m_BaseProductCode <> ESHOPCONNECT_BASE_PRODUCT_CODE) Then ' TJS 10/07/09 TJS 15/08/09 TJS 05/01/10 TJS 05/07/12
             ' start of code added TJS 17/03/09
-            If Not ValidateCoreConfigOptionSetting(XMLConfig, SOURCE_CONFIG_SHIPPING_MODULE_TO_USE, "ShippingModuleToUse", "Interprise Suite basic", "KSI MultiShip", False) Then ' TJS 19/08/10 TJS 07/01/11
+            If Not ValidateCoreConfigOptionSetting(XMLConfig, SOURCE_CONFIG_SHIPPING_MODULE_TO_USE, "ShippingModuleToUse", "Connected Business basic", "KSI MultiShip", False) Then ' TJS 19/08/10 TJS 07/01/11
                 bConfigValid = False ' TJS 19/08/10
             End If
             ' end of code added TJS 17/03/09

@@ -8,9 +8,9 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("Lerryn.Installer.eShopCONNECT")>
 <Assembly: AssemblyDescription("Installer - Lerryn eShopCONNECT")> 
 <Assembly: AssemblyConfiguration("")>
-<Assembly: AssemblyCompany("Lerryn Business Solutions Ltd")> 
+<Assembly: AssemblyCompany("Connected Business")> 
 <Assembly: AssemblyProduct("eShopCONNECT for Connected Business")> 
-<Assembly: AssemblyCopyright("Copyright © 2012 - 2013 Lerryn Business Solutions Ltd")> 
+<Assembly: AssemblyCopyright("Copyright ï¿½ 2012 - 2013 Connected Business")> 
 <Assembly: AssemblyTrademark("Lerryn, eShopCONNECT")> 
 <Assembly: AssemblyCulture("")> 
 

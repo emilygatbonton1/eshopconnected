@@ -1,25 +1,14 @@
 ' eShopCONNECT for Connected Business
 ' Module: ImportExportRule.vb
 '
-' This software is the copyright of Lerryn Business Solutions Ltd and
+' This software is the copyright of Connected Business and
 ' may not be copied, duplicated or modified other than as permitted
 ' in the licence agreement.  This software has been generated using 
-' the Interprise Suite SDK and may incorporate certain intellectual 
-' property of Interprise Software Solutions International Inc who's
+' the Connected Business SDK and may incorporate certain intellectual 
+' property of Interprise Solutions Inc. who's
 ' rights are hereby recognised.
 '
-'       © 2012 - 2014  Lerryn Business Solutions Ltd
-'                      2 East View
-'                      Bessie Lane
-'                      Bradwell
-'                      Hope Valley
-'                      S33 9HZ
-'
-'  Tel +44 (0)1433 621584
-'  Email Support@lerryn.com
-'
-' Lerryn is a Trademark of Lerryn Business Solutions Ltd
-' eShopCONNECT is a Trademark of Lerryn Business Solutions Ltd
+
 '-------------------------------------------------------------------
 '
 ' Last Updated - 01 May 2014

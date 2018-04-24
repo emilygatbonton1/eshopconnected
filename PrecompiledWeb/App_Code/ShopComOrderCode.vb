@@ -1,24 +1,14 @@
 ' eShopCONNECT for Connected Business
 ' Module: ShopComOrderCode.vb
 '
-' This software is the copyright of Lerryn Business Solutions Ltd and
+' This software is the copyright of Connected Business and
 ' may not be copied, duplicated or modified other than as permitted
 ' in the licence agreement.  This software has been generated using 
-' the Interprise Suite SDK and may incorporate certain intellectual 
-' property of Interprise Software Solutions International Inc who's
+' the Connected Business SDK and may incorporate certain intellectual 
+' property of Interprise Solutions Inc. who's
 ' rights are hereby recognised.
 '
-'       © 2012 - 2013  Lerryn Business Solutions Ltd
-'                      2 East View
-'                      Bessie Lane
-'                      Bradwell
-'                      Hope Valley
-'                      S33 9HZ
-'
-'  Tel +44 (0)1433 621584
-'  Email Support@lerryn.com
-'
-' Lerryn is a Trademark of Lerryn Business Solutions Ltd
+
 '-------------------------------------------------------------------
 '
 ' Updated 10 June 2012
@@ -182,7 +172,7 @@ Public Module ShopComOrderCode
                                     End If
                                     xmlOrderHeaderNode.Add(New XElement("OrderDate", sTemp))
                                     sTemp = eShopCONNECTFacade.GetXMLElementText(XMLTemp, SHOPDOTCOM_ORDER_TOTALS & "/TL_TOTAL").Substring(0, 1) ' TJS 16/03/09
-                                    If sTemp = "£" Then ' TJS 18/02/09 TJS 16/03/09
+                                    If sTemp = "ï¿½" Then ' TJS 18/02/09 TJS 16/03/09
                                         xmlOrderHeaderNode.Add(New XElement("OrderCurrency", "GBP")) ' TJS 18/02/09
                                     ElseIf sTemp = "$" Then ' TJS 18/02/09 TJS 16/03/09
                                         xmlOrderHeaderNode.Add(New XElement("OrderCurrency", "USD"))
@@ -597,7 +587,7 @@ Public Module ShopComOrderCode
         ' 16/09/08 | TJS/CG          | 2008.0.01 | Original 
         ' 11/02/09 | TJS             | 2009.1.07 | Modified to add ErrorMessage parameter and check for an Item Source Code
         ' 18/02/09 | TJS             | 2009.1.08 | Modified to cater for Config setting ISItemIDField and SourceItemIDField
-        ' 16/03/09 | TJS             | 2009.1.10 | Modified to remove leading £ as well as $ on currency 
+        ' 16/03/09 | TJS             | 2009.1.10 | Modified to remove leading ï¿½ as well as $ on currency 
         '                                        | fields and set empty currency fields to 0.00
         ' 19/08/10 | TJS             | 2010.1.00 | Modified for CustomSKUProcessing
         ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -666,7 +656,7 @@ Public Module ShopComOrderCode
         ' Date     | Name            | Vers.     | Description
         '------------------------------------------------------------------------------------------
         ' 16/09/08 | TJS/CG          | 2008.0.01 | Original 
-        ' 16/03/09 | TJS             | 2009.1.10 | Modified to remove leading £ as well as $ on currency 
+        ' 16/03/09 | TJS             | 2009.1.10 | Modified to remove leading ï¿½ as well as $ on currency 
         '                                        | fields and set empty currency fields to 0.00
         ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
@@ -716,7 +706,7 @@ Public Module ShopComOrderCode
         ' is input value empty ?
         If InputValue.Length > 0 Then
             ' no, does it start with known currency symbol ?
-            If InputValue.Substring(0, 1) = "$" Or InputValue.Substring(0, 1) = "£" Then
+            If InputValue.Substring(0, 1) = "$" Or InputValue.Substring(0, 1) = "ï¿½" Then
                 ' yes, remove it
                 Return InputValue.Substring(1)
             Else

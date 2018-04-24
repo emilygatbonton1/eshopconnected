@@ -10,18 +10,18 @@
 <h2>Installation and configuration</h2>
 <p><a name="Installation">Installation</a></p>
 <p>In order to use eShopCONNECT, you must make sure you have installed the eShopCONNECT Windows Service and 
-Web Service components on your server.  If you are using Interprise Suite in a hosted environment, you need 
+Web Service components on your server.  If you are using Connected Business in a hosted environment, you need 
 to request that Interprise Solutions enable these components for you, otherwise if you are running Interprise 
 Suite on your own servers, you need to install these optional components on your server by running the Interprise 
 Installer and selecting the eShopCONNECT Windows Service and Web Service components.</p>
 <img src="InstallerSelectFeatures.png">
 <p><a name="Configuration">Configuration</a></p>
 <p>Once installed, you need to edit the configuration files for both the eShopCONNECT Windows Service and 
-Web Service so that they point to your Interprise Suite database.  Start the Interprise Application Configuration Tool 
-which can be found in the Interprise Suite 6.0/Tools folder on your Start menu.</p>
+Web Service so that they point to your Connected Business database.  Start the Interprise Application Configuration Tool 
+which can be found in the Connected Business 6.0/Tools folder on your Start menu.</p>
 <p>When the Application Configuration Tool opens, click on the Open/Configuration File menu item 
-which should open the folder where Interprise Suite was installed.  By default this will be C:\Program Files\Interprise Solutions\Interprise Suite 6.0, 
-or C:\Program Files (x86)\Interprise Solutions\Interprise Suite 6.0 if your computer is a 64 bit machine.  
+which should open the folder where Connected Business was installed.  By default this will be C:\Program Files\Interprise Solutions\Connected Business 6.0, 
+or C:\Program Files (x86)\Interprise Solutions\Connected Business 6.0 if your computer is a 64 bit machine.  
 Select the Lerryn.WindowsService.eShopCONNECT.exe.config file and click Open.</p>
 <img src="EnableEditingOfConfig1.png">
 <p>Set the Selected checkbox to enable editing of the Config File and then select the Company Setup tab.</p>
@@ -35,8 +35,8 @@ for the eShopCONNECT Windows Service to use and change the login settings for th
 This is because the Local System account which the eShopCONNECT Windows Service uses by default normally cannot connect to SQL Server.</p>
 <p>Click Test Connection to check that the connection details are correct, then click OK to close the Database Connection form.</p>
 <p>Enter the Interprise User Code and related password that eShopCONNECT should use to login to your Interprise company and click the Test button adjacent to the Password to check the settings are correct</p>
-<p>We strongly recommend that you create a separate Interprise User for eShopCONNECT and DO NOT use the default Admin user.  This is because Interprise Suite does not permit the same user to login on more than one computer at a time and this can result in login conflicts between the eShopCONNECT Windows Service and the Admin user.</p>
-<p>Click Save on the Configuration Tool for Interprise Suite form to save the connection settings 
+<p>We strongly recommend that you create a separate Interprise User for eShopCONNECT and DO NOT use the default Admin user.  This is because Connected Business does not permit the same user to login on more than one computer at a time and this can result in login conflicts between the eShopCONNECT Windows Service and the Admin user.</p>
+<p>Click Save on the Configuration Tool for Connected Business form to save the connection settings 
 for the eShopCONNECT Windows Service.</p>
 <p>To edit the configuration file for the eShopCONNECT Web Service, click on the 
 Open/Configuration File menu item again.&nbsp; Again this should open the folder where Interprise 

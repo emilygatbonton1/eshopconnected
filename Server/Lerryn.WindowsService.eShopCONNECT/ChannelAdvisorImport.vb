@@ -1,22 +1,11 @@
 ' eShopCONNECT for Connected Business - Windows Service
 ' Module: ChannelAdvisorImport.vb
 '
-' This software is the copyright of Lerryn Business Solutions Ltd and
+' This software is the copyright of Connected Business and
 ' may not be copied, duplicated or modified other than as permitted
 ' in the licence agreement.
 '
-'       © 2012 - 2014  Lerryn Business Solutions Ltd
-'                      2 East View
-'                      Bessie Lane
-'                      Bradwell
-'                      Hope Valley
-'                      S33 9HZ
-'
-'  Tel +44 (0)1433 621584
-'  Email Support@lerryn.com
-'
-' Lerryn is a Trademark of Lerryn Business Solutions Ltd
-' eShopCONNECT is a Trademark of Lerryn Business Solutions Ltd
+
 '-------------------------------------------------------------------
 '
 ' Last Updated - 01 May 2014

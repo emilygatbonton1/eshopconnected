@@ -1,5 +1,5 @@
 ﻿'===============================================================================
-' Interprise Suite SDK
+' Connected Business SDK
 ' Copyright © 2004-2008 Interprise Software Systems International Inc.
 ' All rights reserved.
 ' 

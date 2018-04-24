@@ -1,6 +1,6 @@
 '===============================================================================
-' Interprise Suite SDK
-' Copyright © 2004-2008 Interprise Software Solutions Incorporated
+' Connected Business SDK
+' Copyright © 2004-2008 Interprise Solutions LLC
 ' All rights reserved.
 ' 
 ' Interprise Plugin Factory - Generated Code

@@ -1,5 +1,5 @@
 ﻿'===============================================================================
-' Interprise Suite SDK
+' Connected Business SDK
 ' Copyright © 2004-2007 Interprise Software Systems International Inc.
 ' All rights reserved.
 ' 
@@ -475,7 +475,7 @@ Partial Class ConfigSettingsDetailSection
         '
         Me.rbeShipModuleEdit.AutoHeight = False
         Me.rbeShipModuleEdit.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.rbeShipModuleEdit.Items.AddRange(New Object() {"Interprise Suite basic", "KSI MultiShip"})
+        Me.rbeShipModuleEdit.Items.AddRange(New Object() {"Connected Business basic", "KSI MultiShip"})
         Me.rbeShipModuleEdit.Name = "rbeShipModuleEdit"
         Me.rbeShipModuleEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
         '

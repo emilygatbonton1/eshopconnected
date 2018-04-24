@@ -81,7 +81,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to /*=======================================================================*/
         '''/* Connected Business SDK                                                  */
-        '''/* Copyright Â© 2004-2008 Interprise Software Solutions Incorporated      */
+        '''/* Copyright Â© 2004-2008 Interprise Solutions LLC      */
         '''/* All rights reserved.                                                  */
         '''/*                                                                       */
         '''/* Interprise Plugin Factory - Generated Code                            */
