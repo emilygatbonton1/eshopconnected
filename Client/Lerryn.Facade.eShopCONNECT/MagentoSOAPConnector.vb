@@ -349,8 +349,13 @@ Public Class MagentoSOAPConnector
                             If m_SessionID.Trim <> "" Then
                                 ' no, we are logged in
                                 m_V2SoapAPIWorks = True
-                                ' did call request Magento and API version be checked or is API Version not set ?
-                                If CheckVersion Or m_APIVersion = 0 Then ' TJS 13/11/13
+
+                                'www.dynenttech.com davidonelson 5/4/2018
+                                'OLD CODE forces API extention to be installed on Magento, but it is not required for some functions
+                                'If CheckVersion Or m_APIVersion = 0 Then ' TJS 13/11/13
+
+                                'NEW CODE allows us to proceed to use the functions that don't need the Lerry API extension
+                                If CheckVersion And m_APIVersion = 0 Then ' TJS 13/11/13
                                     ' yes, try getting API and Magento versions
                                     If Not GetAPIVersion() And m_APIVersion = 0 Then
                                         ' didn't work, try older API namespace
@@ -470,8 +475,14 @@ Public Class MagentoSOAPConnector
                                 If m_SessionID.Trim <> "" Then
                                     ' no, we are logged in
                                     ' start of code added TJS 19/09/13
-                                    ' did call request Magento and API version be checked or is API Version not set ?
-                                    If CheckVersion Or m_APIVersion = 0 Then ' TJS 13/11/13
+
+                                    'www.dynenttech.com davidonelson 5/4/2018
+                                    'OLD CODE forces API extention to be installed on Magento, but it is not required for some functions
+                                    'If CheckVersion Or m_APIVersion = 0 Then ' TJS 13/11/13
+
+                                    'NEW CODE allows us to proceed to use the functions that don't need the Lerry API extension
+                                    If CheckVersion And m_APIVersion = 0 Then ' TJS 13/11/13
+
                                         ' yes, try getting API and Magento versions
                                         If Not GetAPIVersion() And m_APIVersion = 0 Then
                                             ' didn't work, try older API namespace
@@ -4274,4 +4285,10 @@ Public Class MagentoSOAPConnector
 
     End Function
 
+    Public Sub New()
+        ' www.dynenttech.com davidoelson 5/4/2018
+        ' Default was SSL3 or TLS, we need to allow TLS11 and TLS12 also, some sites are going to TLS12 only these day
+        ' We need to find a more generic place to put this code os all connectors are converted, but I didn't have to to figure that out now
+        System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 Or SecurityProtocolType.Tls Or SecurityProtocolType.Tls11 Or SecurityProtocolType.Tls12
+    End Sub
 End Class
