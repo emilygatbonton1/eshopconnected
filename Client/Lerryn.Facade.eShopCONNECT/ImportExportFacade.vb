@@ -5771,8 +5771,14 @@ Public Class ImportExportFacade
                         MagentoSet.OverrideMagentoPricesWith = GetXMLElementText(XMLTemp, SOURCE_CONFIG_XML_MAGENTO_OVERRIDE_MAGENTO_PRICES) ' TJS 01/05/14 - setting only visible for relevant customers
                         ' set starting poll time
                         MagentoSet.NextOrderPollTime = Date.Now.AddMinutes(1)
-                        '  set default Last Order Status Update Date/Time value of 1 month ago
-                        MagentoSet.LastOrderStatusUpdate = Date.Today.AddMonths(-1)
+
+                        ' www.dynenttech.com davidonelson 5/3/2018
+                        ' Going back one month the first time is too much, change to go back one day the first time
+                        ' If you want to go back farther, you can adjust the LastOrderStatusUpdate value in the database
+                        'MagentoSet.LastOrderStatusUpdate = Date.Today.AddMonths(-1)
+                        ' Set default Last Order Status Update Date/Time value one day back
+                        MagentoSet.LastOrderStatusUpdate = Date.Today.AddDays(-1)
+
                         ' have Last Order Status Update Date/Times been set ?
                         If XMLLastUpdateTimes IsNot Nothing Then
                             ' yes, find relevant entry
