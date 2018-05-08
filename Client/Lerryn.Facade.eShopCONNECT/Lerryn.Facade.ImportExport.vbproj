@@ -180,7 +180,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\GlobalAssemblyInfo.vb">
+    <Compile Include="..\..\GlobalAssemblyInfo.vb">
       <Link>GlobalAssemblyInfo.vb</Link>
     </Compile>
     <Compile Include="AmazonImportFacade.vb" />

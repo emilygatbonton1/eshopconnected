@@ -142,8 +142,8 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\GlobalAssemblyInfo.vb">
-      <Link>GlobalAssemblyInfo.vb</Link>
+    <Compile Include="..\..\ExecutableAssemblyInfo.vb">
+      <Link>ExecutableAssemblyInfo.vb</Link>
     </Compile>
     <Compile Include="AmazonImport.vb" />
     <Compile Include="AmazonInventoryUpdate.vb" />
