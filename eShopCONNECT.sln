@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{42F0D767-679F-4CE6-A401-F7260A631844}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Lerryn.WindowsService.eShopCONNECT", "Server\Lerryn.WindowsService.eShopCONNECT\Lerryn.WindowsService.eShopCONNECT.vbproj", "{16B8FA35-6886-4B74-9604-424E8DD075EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lerryn.WindowsService.eShopCONNECT.UnitTest", "Server\Lerryn.WindowsService.eShopCONNECT.UnitTest\Lerryn.WindowsService.eShopCONNECT.UnitTest.csproj", "{F37EC2B8-3EBE-4605-9C0B-591C645F0F0C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Lerryn.Business.ImportExport", "ClientServer\Lerryn.Business.eShopCONNECT\Lerryn.Business.ImportExport.vbproj", "{B20E269E-5227-49B6-AFA3-370A9BE16752}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,18 @@ Global
 		{F37EC2B8-3EBE-4605-9C0B-591C645F0F0C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{F37EC2B8-3EBE-4605-9C0B-591C645F0F0C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{F37EC2B8-3EBE-4605-9C0B-591C645F0F0C}.Release|x86.ActiveCfg = Release|Any CPU
+		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Debug|x86.ActiveCfg = Debug|x86
+		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Debug|x86.Build.0 = Debug|x86
+		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Release|Mixed Platforms.Build.0 = Release|x86
+		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Release|x86.ActiveCfg = Release|x86
+		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,9 +120,10 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{74ED9D36-D8A3-4429-B4E3-B0287BE665CD} = {42F0D767-679F-4CE6-A401-F7260A631844}
 		{E0F2BA64-EAE8-4651-8108-B0F56B07F026} = {42F0D767-679F-4CE6-A401-F7260A631844}
-		{16B8FA35-6886-4B74-9604-424E8DD075EC} = {B6E4692A-4D42-446E-B81E-D641729EED00}
-		{F37EC2B8-3EBE-4605-9C0B-591C645F0F0C} = {B6E4692A-4D42-446E-B81E-D641729EED00}
 		{B6930289-05B4-493A-B92E-7C71406617CF} = {88679ACF-DE9F-4210-A45D-0ADA741543FB}
 		{0E11CEDD-02AD-4511-941A-429C4B7BDB52} = {88679ACF-DE9F-4210-A45D-0ADA741543FB}
+		{16B8FA35-6886-4B74-9604-424E8DD075EC} = {B6E4692A-4D42-446E-B81E-D641729EED00}
+		{F37EC2B8-3EBE-4605-9C0B-591C645F0F0C} = {B6E4692A-4D42-446E-B81E-D641729EED00}
+		{B20E269E-5227-49B6-AFA3-370A9BE16752} = {82E52C6C-3D15-4762-83AA-BF75F01BEAD8}
 	EndGlobalSection
 EndGlobal
