@@ -657,6 +657,11 @@ Public Class ServiceMain
         Thread.Sleep(20)
         InitializeComponent()
 
+        ' www.dynenttech.com davidonelson 5/4/2018
+        ' Default was SSL3 or TLS, we need to allow TLS11 and TLS12 also, some sites are going to TLS12 only these days
+        System.Net.ServicePointManager.SecurityProtocol = Net.SecurityProtocolType.Ssl3 Or Net.SecurityProtocolType.Tls Or Net.SecurityProtocolType.Tls11 Or Net.SecurityProtocolType.Tls12
+
+
     End Sub
 
 End Class
