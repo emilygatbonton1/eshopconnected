@@ -33,6 +33,29 @@ Public Class ServiceMain
     '    OnStop()
     'End Sub
 
+    ' www.dynenttech.com davidonelson 5/8/2018
+    ' Setup debugging of the Windows Service
+    ' (1) For Lerryn.WindowsService.eShopCONNECT project
+    '       (a) Set as startup project
+    '       (b) Set project application type from "Windows Service" to "Windows Forms Application"
+    '       (c) Set project application startup object from "ServiceMain" to "Sub Main"
+    '       (d) Create/Set registry entry: [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Lerryn\ISPlugins] "InhibitWebPosts"="Yes"
+    '           See Lerryn.ISPlugins.InhibitWebPosts.reg in root folder
+    '       (e) Set breakpoints in these functions to start with
+    '               ServiceMain.TestStartupAndStop
+    '               ServiceMain.OnStart
+    '               ServiceMain.timerCallback
+    '               ServiceMain.RunRoutines
+    ' Controlling function if running in VS debugger
+    Protected Sub TestStartupAndStop()
+        Dim args() As String
+
+        Me.OnStart(args)
+        ' Sleep a good long time, and let the timer trigger until you are done debugging
+        Threading.Thread.Sleep(10000000)
+        Me.OnStop()
+    End Sub
+
     Protected Overrides Sub OnStart(ByVal args() As String)
         ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         '

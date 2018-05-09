@@ -28,9 +28,21 @@ Partial Class ServiceMain
         '
         '   ServicesToRun = New System.ServiceProcess.ServiceBase () {New Service1, New MySecondUserService}
         '
-        ServicesToRun = New System.ServiceProcess.ServiceBase() {New ServiceMain}
 
-        System.ServiceProcess.ServiceBase.Run(ServicesToRun)
+        ' www.dynenttech.com davidonelson 5/8/2018
+        ' OLD CODE
+        'ServicesToRun = New System.ServiceProcess.ServiceBase() {New ServiceMain}
+        'System.ServiceProcess.ServiceBase.Run(ServicesToRun)
+        ' NEW CODE
+        ' This allows for debugging in interactive mode and running as a service in the background
+        If Environment.UserInteractive Then
+            Dim service1 As ServiceMain = New ServiceMain()
+            service1.TestStartupAndStop()
+        Else
+            ServicesToRun = New System.ServiceProcess.ServiceBase() {New ServiceMain}
+            System.ServiceProcess.ServiceBase.Run(ServicesToRun)
+        End If
+
     End Sub
 
     'Required by the Component Designer
