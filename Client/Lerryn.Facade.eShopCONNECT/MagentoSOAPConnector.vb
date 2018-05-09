@@ -1616,6 +1616,19 @@ Public Class MagentoSOAPConnector
         strSOAP = strSOAP & Right("00" & CreatedSince.Minute, 2) & ":" & Right("00" & CreatedSince.Second, 2) & "</value>"
         strSOAP = strSOAP + "</item></value></item></item></args></ns1:call></SOAP-ENV:Body></SOAP-ENV:Envelope>"
 
+        ' www.dynenttech.com davidonelson 5/8/2018
+        ' SAMPLE CODE to add additional criteria to the above query
+        ' OLD CODE (from above)
+        'strSOAP = strSOAP + "<args SOAP-ENC:arrayType=""ns2:Map[1]"" xsi:type=""SOAP-ENC:Array"">"
+        ' NEW CODE (indicates 2 conditions instead of one)
+        'strSOAP = strSOAP + "<args SOAP-ENC:arrayType=""ns2:Map[2]"" xsi:type=""SOAP-ENC:Array"">"
+        ' OLD CODE (from above)
+        'strSOAP = strSOAP + "</item></value></item></item></args></ns1:call></SOAP-ENV:Body></SOAP-ENV:Envelope>"
+        ' NEW CODE (adds AND store_name starts with 'USA')
+        'strSOAP = strSOAP & "</item></value></item>"
+        'strSOAP = strSOAP & "<item><key xsi:type=""xsd:string"">store_name</key><value xsi:type=""ns2:Map""> <item> <key xsi:type=""xsd:string"">like</key> <value xsi:type=""xsd:string"">USA%</value> </item> </value></item>"
+        'strSOAP = strSOAP & "</item></args></ns1:call></SOAP-ENV:Body></SOAP-ENV:Envelope>"
+
         If PostSOAP(strSOAP, cSOAPAction, m_MagentoAPIURL, False, 300000) Then ' TJS 13/11/13
             ' Feed the SOAP response into the XMLResponse object for processing
             Try
