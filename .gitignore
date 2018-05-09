@@ -1,0 +1,23 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+Client/Lerryn.Facade.eShopCONNECT/bin/
+Client/Lerryn.Facade.eShopCONNECT/obj/
+Client/Lerryn.Presentation.eShopCONNECT/bin/
+Client/Lerryn.Presentation.eShopCONNECT/obj/
+ClientDeployment/Lerryn.Installer.eShopCONNECT/bin/
+ClientDeployment/Lerryn.Installer.eShopCONNECT/obj/
+ClientDeployment/Lerryn.InstallerSetup.eShopCONNECT/bin/
+ClientDeployment/Lerryn.InstallerSetup.eShopCONNECT/obj/
+ClientServer/Lerryn.Business.eShopCONNECT/bin/
+ClientServer/Lerryn.Business.eShopCONNECT/obj/
+Server/Lerryn.WebSite.eShopCONNECT/bin/
+Server/Lerryn.WebSite.eShopCONNECT/obj/
+Server/Lerryn.WindowsService.eShopCONNECT/bin/
+Server/Lerryn.WindowsService.eShopCONNECT/obj/
+Server/Lerryn.WindowsService.eShopCONNECT.UnitTest/bin/
+Server/Lerryn.WindowsService.eShopCONNECT.UnitTest/obj/
+Shared/Lerryn.Extendable.eShopCONNECT/bin/
+Shared/Lerryn.Extendable.eShopCONNECT/obj/
+Shared/Lerryn.Framework.eShopCONNECT/bin/
+Shared/Lerryn.Framework.eShopCONNECT/obj/

@@ -3975,19 +3975,21 @@ INSERT [dbo].[DataDictionaryColumn] ([TableName], [ColumnName], [ColumnMapping],
 </summary>
 </member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CreateMultipleLocationInReport">
 	<summary>
-  Looks up a localized string similar to IF EXISTS (SELECT 1 FROM sys.procedures where name = 'CreateMultipleLocationInReport')
-DROP PROCEDURE CreateMultipleLocationInReport
+  Looks up a localized string similar to IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[CreateMultipleLocationInReport]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[CreateMultipleLocationInReport]
 GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[CreateMultipleLocationInReport]
+@SalesOrderCode NVARCHAR(30)
+AS
 
-CREATE PROCEDURE  CreateMultipleLocationInReport  
-@SalesOrderCode NVARCHAR(30)  
-AS  
-IF NOT EXISTS(SELECT 1 FROM (SELECT  SalesOrderCode,   
-   CASE WHEN COUNT(*) &gt; 1 THEN 'Multiple' ELSE MIN(Stage) END AS Stage    
-  FROM  CustomerSalesOrderWorkflow    
-  GROUP BY    
-   SalesOrderCode) A  
-where a.Stage = 'Multiple' and a.SalesOrderCode = @SalesOrderCode)   [rest of string was truncated]";.
+Declare @Count int;  
+select Count = COUNT(*) from (select WarehouseCode from customersalesorderdetail 
+where SalesOrderCode = @SalesOrderCode
+Group by WarehouseCode)  [rest of string was truncated]";.
 </summary>
 </member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CSL_23534">
 	<summary>
@@ -4128,6 +4130,13 @@ print '---------'
 print 'Update Customer old Control to CBN control'
 	Update SystemUserroleMenuformSEction  set Sectionclasstype = 'Interprise.Presentation.Customer.CustomerDetailCBNControl.CustomerDetailCBNControlSection'
 		where  Sectionclasstype = 'Interprise.Presentation.Customer.CustomerDetail.CustomerDetailControl' --Update Cu [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.EnableAdvancedTaxCodeDropDown">
+	<summary>
+  Looks up a localized string similar to IF NOT EXISTS(SELECT * FROM CustomerAdvancedPreference where NAME = 'EnableAdvancedTaxCodeDropDown')
+INSERT INTO [CustomerAdvancedPreference] ([Name],[Description],[DataType],[Value],[Group],[UserCreated],[DateCreated],[UserModified],[DateModified],[VersionCreated],[VersionModified])VALUES('EnableAdvancedTaxCodeDropDown','This option enables the Tax Code dropdown in quote, sales order, invoice and credit memo transactions.  
+Unchecked – Disable the Tax Code dropdown.
+Checked – Enable the Tax Code dropdow [rest of string was truncated]";.
 </summary>
 </member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.eShopConnectedDataFixer">
 	<summary>
