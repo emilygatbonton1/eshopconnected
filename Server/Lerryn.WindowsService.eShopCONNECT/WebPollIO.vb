@@ -1174,7 +1174,9 @@ Module WebPollIO
                     MagentoConnection.MagentoVersion = ActiveSource.MagentoSettings(iMerchantLoop).MagentoVersion ' TJS 04/01/14
                     MagentoConnection.LerrynAPIVersion = ActiveSource.MagentoSettings(iMerchantLoop).LerrynAPIVersion ' TJS 04/01/14
                     Try
-                        bLoggedIn = MagentoConnection.Login(ActiveSource.MagentoSettings(iMerchantLoop).APIURL, ActiveSource.MagentoSettings(iMerchantLoop).APIUser, ActiveSource.MagentoSettings(iMerchantLoop).APIPwd)
+                        ' www.dynenttech.com davidonelson 5/4/2018
+                        ' This call was missing the ConvertEntitiesForXML for the uid and pwd, and this was causing improper password to be passsed to SOAP xml
+                        bLoggedIn = MagentoConnection.Login(ActiveSource.MagentoSettings(iMerchantLoop).APIURL, m_ImportExportConfigFacade.ConvertEntitiesForXML(ActiveSource.MagentoSettings(iMerchantLoop).APIUser), m_ImportExportConfigFacade.ConvertEntitiesForXML(ActiveSource.MagentoSettings(iMerchantLoop).APIPwd))
 
                     Catch ex As Exception
                         m_ImportExportConfigFacade.SendSourceErrorEmail(ActiveSource.XMLConfig, "PollMagento", "Unable to log in to Magento - URL " & ActiveSource.MagentoSettings(iMerchantLoop).APIURL & ", user " & ActiveSource.MagentoSettings(iMerchantLoop).APIUser & ", password *********")
