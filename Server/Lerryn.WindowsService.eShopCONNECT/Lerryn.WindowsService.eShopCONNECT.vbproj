@@ -17,6 +17,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
+	<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -187,7 +188,6 @@
     <Compile Include="SearsComStatusUpdate.vb" />
     <Compile Include="ServiceMain.designer.vb">
       <DependentUpon>ServiceMain.vb</DependentUpon>
-      <Link>ServiceMain.designer.vb</Link>
     </Compile>
     <Compile Include="ServiceMain.vb">
       <SubType>Component</SubType>
@@ -212,7 +212,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ServiceMain.resx">
       <DependentUpon>ServiceMain.vb</DependentUpon>
-      <Link>ServiceMain.resx</Link>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

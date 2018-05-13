@@ -74,9 +74,7 @@
   <ItemGroup>
     <Import Include="Microsoft.Win32" />
     <Import Include="System" />
-    <Import Include="System.Data" />
     <Import Include="System.Text" />
-    <Import Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\..\..\GlobalAssemblyInfo.vb">
