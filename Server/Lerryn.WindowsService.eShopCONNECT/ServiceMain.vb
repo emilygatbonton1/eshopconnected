@@ -41,14 +41,29 @@ Public Class ServiceMain
     '       (c) Set project application startup object from "ServiceMain" to "Sub Main"
     '       (d) Create/Set registry entry: [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Lerryn\ISPlugins] "InhibitWebPosts"="Yes"
     '           See Lerryn.ISPlugins.InhibitWebPosts.reg in root folder
+    '           Code below will let you know if the program picked up the registry entry as expected
     '       (e) Set breakpoints in these functions to start with
     '               ServiceMain.TestStartupAndStop
     '               ServiceMain.OnStart
     '               ServiceMain.timerCallback
     '               ServiceMain.RunRoutines
+    '       (f) Use the CB App Configuration Tool to make sure your windows service project is pointing to the correct database
+    '               Set connection in this file Server\Lerryn.WindowsService.eShopCONNECT\App.Config
+
     ' Controlling function if running in VS debugger
     Protected Sub TestStartupAndStop()
         Dim args() As String
+
+        ' Check to see if bInhibitWebPosts has been set, and inform the developer
+        Dim ErrorNotification As New Facade.ImportExport.ErrorNotification ' TJS 10/06/12
+        Dim ImportExportDataset = New Lerryn.Framework.ImportExport.DatasetGateway.ImportExportDatasetGateway
+        Dim ImportExportConfigFacade = New Lerryn.Facade.ImportExport.ImportExportConfigFacade(ImportExportDataset, ErrorNotification, PRODUCT_CODE, PRODUCT_NAME) ' TJS 10/06/12
+        Dim bInhibitWebPosts As Boolean = ImportExportConfigFacade.CheckRegistryValue(REGISTRY_KEY_ROOT, "InhibitWebPosts", "NO").ToUpper = "YES"
+        If bInhibitWebPosts Then
+            MsgBox("WARNING: bInhibitWebPosts is TRUE (web site updates WILL NOT BE happening)")
+        Else
+            MsgBox("WARNING: bInhibitWebPosts is FALSE (web site updates WILL BE happening)")
+        End If
 
         Me.OnStart(args)
         ' Sleep a good long time, and let the timer trigger until you are done debugging
