@@ -26,6 +26,8 @@ Imports System.Net ' TJS 02/12/11
 Imports System.Web ' TJS 18/03/11
 Imports System.Xml.Linq ' TJS 02/12/11
 Imports System.Xml.XPath ' TJS 02/12/11
+Imports System.Xml
+Imports System.Data
 
 #Region " ImportExportRule "
 Public Class ImportExportRule
@@ -5662,8 +5664,14 @@ Public Class ImportExportRule
                         ChannelAdvSet.CustomSKUProcessing = GetXMLElementText(XMLTemp, SOURCE_CONFIG_XML_CHANNEL_ADV_CUSTOM_SKU_PROCESSING) ' TJS 19/08/10 - setting only visible for relevant customers
                         ' set starting poll time
                         ChannelAdvSet.NextConnectionTime = Date.Now.AddMinutes(1)
-                        '  set default Last Order Status Update Date/Time value of 1 month ago
-                        ChannelAdvSet.LastOrderStatusUpdate = Date.Today.AddMonths(-1) ' TJS 19/08/10
+
+                        ' www.dynenttech.com davidonelson 5/3/2018
+                        ' Going back one month the first time is too much, change to go back one day the first time
+                        ' If you want to go back farther, you can adjust the LastOrderStatusUpdate value in the database
+                        ' set default Last Order Status Update Date/Time value of 1 month ago
+                        'ChannelAdvSet.LastOrderStatusUpdate = Date.Today.AddMonths(-1) ' TJS 19/08/10
+                        ChannelAdvSet.LastOrderStatusUpdate = Date.Today.AddDays(-1) ' TJS 19/08/10
+
                         ' have Last Order/Payment Status Update Date/Times been set ?
                         If XMLLastUpdateTimes IsNot Nothing Then ' TJS 19/08/10
                             ' yes, find relevant entry
@@ -5768,8 +5776,14 @@ Public Class ImportExportRule
                         MagentoSet.OverrideMagentoPricesWith = GetXMLElementText(XMLTemp, SOURCE_CONFIG_XML_MAGENTO_OVERRIDE_MAGENTO_PRICES) ' TJS 01/05/14 - setting only visible for relevant customers
                         ' set starting poll time
                         MagentoSet.NextOrderPollTime = Date.Now.AddMinutes(1)
+
+                        ' www.dynenttech.com davidonelson 5/3/2018
+                        ' Going back one month the first time is too much, change to go back one day the first time
+                        ' If you want to go back farther, you can adjust the LastOrderStatusUpdate value in the database
                         '  set default Last Order Status Update Date/Time value of 1 month ago
-                        MagentoSet.LastOrderStatusUpdate = Date.Today.AddMonths(-1)
+                        'MagentoSet.LastOrderStatusUpdate = Date.Today.AddMonths(-1)
+                        MagentoSet.LastOrderStatusUpdate = Date.Today.AddDays(-1)
+
                         ' have Last Order Status Update Date/Times been set ?
                         If XMLLastUpdateTimes IsNot Nothing Then
                             ' yes, find relevant entry
@@ -5916,8 +5930,14 @@ Public Class ImportExportRule
                         eBaySet.CustomSKUProcessing = GetXMLElementText(XMLTemp, SOURCE_CONFIG_XML_EBAY_CUSTOM_SKU_PROCESSING) ' setting only visible for relevant customers
                         ' set starting poll time
                         eBaySet.NextOrderPollTime = Date.Now.AddMinutes(1)
-                        '  set default Last Order Status Update Date/Time value of 30 days ago as eBay won't allow a date range of more then 30 days
-                        eBaySet.LastOrderStatusUpdate = Date.Today.AddDays(-30)
+
+                        ' www.dynenttech.com davidonelson 5/3/2018
+                        ' Going back one month the first time is too much, change to go back one day the first time
+                        ' If you want to go back farther, you can adjust the LastOrderStatusUpdate value in the database
+                        ' set default Last Order Status Update Date/Time value of 30 days ago as eBay won't allow a date range of more then 30 days
+                        'eBaySet.LastOrderStatusUpdate = Date.Today.AddDays(-30)
+                        eBaySet.LastOrderStatusUpdate = Date.Today.AddDays(-1)
+
                         ' have Last Order/Payment Status Update Date/Times been set ?
                         If XMLLastUpdateTimes IsNot Nothing Then
                             ' yes, find relevant entry
@@ -6059,8 +6079,14 @@ Public Class ImportExportRule
                         ThreeDCartSet.CustomSKUProcessing = GetXMLElementText(XMLTemp, SOURCE_CONFIG_XML_3DCART_CUSTOM_SKU_PROCESSING) ' setting only visible for relevant customers
                         ' set starting poll time
                         ThreeDCartSet.NextOrderPollTime = Date.Now.AddMinutes(1)
+
+                        ' www.dynenttech.com davidonelson 5/3/2018
+                        ' Going back one month the first time is too much, change to go back one day the first time
+                        ' If you want to go back farther, you can adjust the LastOrderStatusUpdate value in the database
                         '  set default Last Order Status Update Date/Time value of 1 month ago
-                        ThreeDCartSet.LastOrderStatusUpdate = Date.Today.AddMonths(-1)
+                        'ThreeDCartSet.LastOrderStatusUpdate = Date.Today.AddMonths(-1)
+                        ThreeDCartSet.LastOrderStatusUpdate = Date.Today.AddDays(-1)
+
                         ' have Last Order Status Update Date/Times been set ?
                         If XMLLastUpdateTimes IsNot Nothing Then
                             ' yes, find relevant entry
