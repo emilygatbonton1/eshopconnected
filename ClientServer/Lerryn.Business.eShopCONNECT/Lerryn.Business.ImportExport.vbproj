@@ -31,7 +31,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>None</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\..\DLL\</OutputPath>
+    <OutputPath>..\..\DLL\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -77,10 +77,51 @@
     <Import Include="System.Text" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\GlobalAssemblyInfo.vb">
+    <Compile Include="..\..\GlobalAssemblyInfo.vb">
       <Link>GlobalAssemblyInfo.vb</Link>
     </Compile>
+    <Compile Include="ErrorNotification.vb" />
+    <Compile Include="ImportExportRule.vb" />
+    <Compile Include="LicenceFunctions.vb" />
     <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="WebFunctions.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Interprise.Business.Base, Version=18.2.6676.30439, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Connected Business 18.2 Client\Interprise.Business.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Connectivity.Database.Configuration.Design, Version=18.2.6676.30426, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Connected Business 18.2 Client\Interprise.Connectivity.Database.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Extendable.Base, Version=18.2.6676.30438, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Connected Business 18.2 Client\Interprise.Extendable.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Framework.Base, Version=18.2.6676.30429, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Connected Business 18.2 Client\Interprise.Framework.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Licensing.Base, Version=18.2.6676.30424, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Connected Business 18.2 Client\Interprise.Licensing.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Interprise.Presentation.Base, Version=18.2.6676.30449, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Connected Business 18.2 Client\Interprise.Presentation.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Lerryn.Framework.ImportExport, Version=18.2.6707.25805, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\Lerryn.Framework.ImportExport.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
   <PropertyGroup>

@@ -64,7 +64,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>..\..\..\..\DLL\</OutputPath>
+    <OutputPath>..\..\DLL\</OutputPath>
     <DocumentationFile>Lerryn.WindowsService.eShopCONNECT.xml</DocumentationFile>
     <DebugType>full</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>

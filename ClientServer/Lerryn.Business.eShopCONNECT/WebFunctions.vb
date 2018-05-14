@@ -16,6 +16,7 @@
 Imports Microsoft.VisualBasic ' TJS 26/01/09
 Imports System.Xml.Linq ' TJS 02/12/11
 Imports System.Xml.XPath ' TJS 02/12/11
+Imports System.Xml
 
 Module WebFunctions
 
