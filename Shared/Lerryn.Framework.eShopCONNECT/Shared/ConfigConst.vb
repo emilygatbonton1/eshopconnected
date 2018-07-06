@@ -446,8 +446,8 @@ Namespace [Shared]
         Public Const CHANNEL_ADVISOR_ORDER_SERVICE_URL As String = "https://api.channeladvisor.com/ChannelAdvisorAPI/v7/OrderService.asmx" ' TJS 30/12/09 FA 18/03/11 TJS 02/12/11 TJS 04/01/14
         Public Const CHANNEL_ADVISOR_SHIPPING_SERVICE_URL As String = "https://api.channeladvisor.com/ChannelAdvisorAPI/v7/ShippingService.asmx" ' TJS 30/12/09 FA 18/03/11 TJS 02/12/11 TJS 04/01/14
         Public Const CHANNEL_ADVISOR_INVENTORY_SERVICE_URL As String = "https://api.channeladvisor.com/ChannelAdvisorAPI/v7/InventoryService.asmx" ' TJS 02/12/11 TJS 04/01/14
-        Public Const CHANNEL_ADVISOR_LERRYN_DEVELOPER_KEY As String = "501aef01-e043-4481-8b0f-ac8fe6f8af0c" ' TJS 30/12/09
-        Public Const CHANNEL_ADVISOR_LERRYN_DEVELOPER_PASSWORD As String = "Interprise1!" ' TJS 30/12/09 TJS 06/01/10
+        Public Const CHANNEL_ADVISOR_LERRYN_DEVELOPER_KEY As String = Interprise.Licensing.Base.Shared.Const.CHANNEL_ADVISOR_LERRYN_DEVELOPER_KEY ' TJS 30/12/09
+        Public Const CHANNEL_ADVISOR_LERRYN_DEVELOPER_PASSWORD As String = Interprise.Licensing.Base.Shared.Const.CHANNEL_ADVISOR_LERRYN_DEVELOPER_PASSWORD ' TJS 30/12/09 TJS 06/01/10
 
         ' eBay Sandbox Development Web Services
         Public Const EBAY_SANDBOX_SOAP_SERVER_URL As String = "https://api.sandbox.ebay.com/ws/api.dll" ' TJS 02/12/11

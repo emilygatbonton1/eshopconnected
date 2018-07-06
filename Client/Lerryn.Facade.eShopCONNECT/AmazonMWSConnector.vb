@@ -9,13 +9,13 @@ Imports MarketplaceWebService.Model
 
 Public Class AmazonMWSConnector
 
-    Private Const UKDeveloperID As String = ""
-    Private Const UKAccessKeyID As String = ""
-    Private Const UKSecretAccessKey As String = ""
+    Private Const UKDeveloperID As String = Interprise.Licensing.Base.Shared.Const.AMAZON_MWS_DEVELOPER_ID
+    Private Const UKAccessKeyID As String = Interprise.Licensing.Base.Shared.Const.AMAZON_MWS_ACCESS_KEY_ID
+    Private Const UKSecretAccessKey As String = Interprise.Licensing.Base.Shared.Const.AMAZON_MWS_SECRET_ACCESS_KEY
     ' Start of code added TJS 16/06/12 and completed TJS 02/08/12
-    Private Const USDeveloperID As String = ""
-    Private Const USAccessKeyID As String = ""
-    Private Const USSecretAccessKey As String = ""
+    Private Const USDeveloperID As String = Interprise.Licensing.Base.Shared.Const.AMAZON_MWS_DEVELOPER_ID
+    Private Const USAccessKeyID As String = Interprise.Licensing.Base.Shared.Const.AMAZON_MWS_ACCESS_KEY_ID
+    Private Const USSecretAccessKey As String = Interprise.Licensing.Base.Shared.Const.AMAZON_MWS_SECRET_ACCESS_KEY
     ' End of code added TJS 16/06/12 and completed TJS 02/08/12
 
     Private applicationVersion As String
