@@ -451,17 +451,17 @@ Namespace [Shared]
 
         ' eBay Sandbox Development Web Services
         Public Const EBAY_SANDBOX_SOAP_SERVER_URL As String = "https://api.sandbox.ebay.com/ws/api.dll" ' TJS 02/12/11
-        Public Const EBAY_SANDBOX_LERRYN_DEVELOPER_ID As String = "e47fab0a-818c-4ac1-bd87-1c21edbb4cd4" ' TJS 02/12/11
-        Public Const EBAY_SANDBOX_LERRYN_APPLICATION_ID As String = "Interpri-2383-4abc-82be-dea5ed028fed" ' TJS 02/12/11
-        Public Const EBAY_SANDBOX_LERRYN_CERTIFICATE_ID As String = "a1b28c19-9d25-45ba-b007-e50e7de19814" ' TJS 02/12/11
-        Public Const EBAY_SANDBOX_ESHOPCONNECT_RUNAME As String = "Interprise_Solu-Interpri-2383-4-tdvlp" ' TJS 02/12/11
+        Public Const EBAY_SANDBOX_LERRYN_DEVELOPER_ID As String = Interprise.Licensing.Base.Shared.Const.EBAY_SANDBOX_LERRYN_DEVELOPER_ID
+        Public Const EBAY_SANDBOX_LERRYN_APPLICATION_ID As String = Interprise.Licensing.Base.Shared.Const.EBAY_SANDBOX_LERRYN_APPLICATION_ID
+        Public Const EBAY_SANDBOX_LERRYN_CERTIFICATE_ID As String = Interprise.Licensing.Base.Shared.Const.EBAY_SANDBOX_LERRYN_CERTIFICATE_ID
+        Public Const EBAY_SANDBOX_ESHOPCONNECT_RUNAME As String = Interprise.Licensing.Base.Shared.Const.EBAY_SANDBOX_ESHOPCONNECT_RUNAME
 
         ' eBay Live Development Web Services 
         Public Const EBAY_SOAP_SERVER_URL As String = "https://api.ebay.com/ws/api.dll" ' TJS 02/12/11
-        Public Const EBAY_LERRYN_DEVELOPER_ID As String = "e47fab0a-818c-4ac1-bd87-1c21edbb4cd4" ' TJS 02/12/11
-        Public Const EBAY_LERRYN_APPLICATION_ID As String = "Interpri-2573-43f4-9f6e-c1c6bd684e42" ' TJS 02/12/11
-        Public Const EBAY_LERRYN_CERTIFICATE_ID As String = "6342c3f8-d2cd-4d89-baf0-bd68c5e0afa8" ' TJS 02/12/11
-        Public Const EBAY_ESHOPCONNECT_RUNAME As String = "Interprise_Solu-Interpri-2573-4-rdame" ' TJS 02/12/11
+        Public Const EBAY_LERRYN_DEVELOPER_ID As String = Interprise.Licensing.Base.Shared.Const.EBAY_LERRYN_DEVELOPER_ID
+        Public Const EBAY_LERRYN_APPLICATION_ID As String = Interprise.Licensing.Base.Shared.Const.EBAY_LERRYN_APPLICATION_ID
+        Public Const EBAY_LERRYN_CERTIFICATE_ID As String = Interprise.Licensing.Base.Shared.Const.EBAY_LERRYN_CERTIFICATE_ID
+        Public Const EBAY_ESHOPCONNECT_RUNAME As String = Interprise.Licensing.Base.Shared.Const.EBAY_ESHOPCONNECT_RUNAME
 
         ' Sears.com Web Services
         Public Const SEARSDOTCOM_ORDER_POLL_URL As String = "https://seller.marketplace.sears.com/SellerPortal/api/oms/purchaseorder/v3" ' TJS 16/01/12
