@@ -453,7 +453,8 @@ Public Class ErrorNotification
                 'Start the logging to the file
                 writer = New StreamWriter(sLogFileName, True)
 
-                writer.WriteLine(Now.ToString("HHmmss") & "    " & MessageType & "     - " & MessageText)
+                writer.WriteLine(Now.ToString("HH:mm:ss") & "    " & MessageType & "     - " & MessageText)
+                writer.WriteLine("------------------------------------------------------------------------------------------------------------")
                 writer.Close()
                 writer.Dispose()
 
