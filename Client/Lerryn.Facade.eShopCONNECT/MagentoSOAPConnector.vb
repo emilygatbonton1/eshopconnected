@@ -351,11 +351,11 @@ Public Class MagentoSOAPConnector
                                 m_V2SoapAPIWorks = True
 
                                 'www.dynenttech.com davidonelson 5/4/2018
-                                'OLD CODE forces API extention to be installed on Magento, but it is not required for some functions
-                                'If CheckVersion Or m_APIVersion = 0 Then ' TJS 13/11/13
+                                'This code allows us to proceed to use the functions that don't need the Magento Lerryn API extension (login, list orders, order details, enough to immport orders)
+                                'If CheckVersion And m_APIVersion = 0 Then ' TJS 13/11/13
+                                'This code requires the Lerryn API extention to be installed on Magento (which is the default for full funcitonality)
+                                If CheckVersion Or m_APIVersion = 0 Then ' TJS 13/11/13
 
-                                'NEW CODE allows us to proceed to use the functions that don't need the Lerry API extension
-                                If CheckVersion And m_APIVersion = 0 Then ' TJS 13/11/13
                                     ' yes, try getting API and Magento versions
                                     If Not GetAPIVersion() And m_APIVersion = 0 Then
                                         ' didn't work, try older API namespace
