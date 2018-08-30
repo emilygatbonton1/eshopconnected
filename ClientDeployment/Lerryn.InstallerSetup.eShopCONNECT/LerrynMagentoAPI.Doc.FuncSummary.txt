@@ -1,0 +1,235 @@
+
+Lerryn API Method calls Details 
+As of 8/2018 documented by staff at www.dynenttech.com
+
+1.  API : sales_order.list
+	SOAPConnectorMethod : GetSalesOrderList(ModifiedAfterDate)
+    UsedIn : WebPollIO.vb -> Method: PollMagento 
+    Parameter : modifiedAfterDate (optional)
+    Get list of Orders created since specified date/time from Magento
+   
+2. API : sales_order.info
+   SOAPConnectorMethod : GetSalesOrderDetail(OrderID)
+   UsedIn : WebPollIO.vb -> Method: PollMagento 
+   Parameter : OrderID
+   Get details of the specified Order from Magento
+   
+3. API : Lerryn_LBSapi.lbsGetAttributeTimestamp
+   SOAPConnectorMethod : GetAttributeTimestamp()
+   UsedIn : MagentoImportFacade.vb -> Methods: GetMagentoAttributeList() AND PublishAttributesAndValues()
+   Parameter : 
+   Return the latest timestamp value from the lerryn_lbsapi_attributesave_log table
+   
+4. API : Lerryn_LBSapi.lbsCatalogProductAttributeList
+   SOAPConnectorMethod : GetAttributeList(ModifiedAfter)
+   UsedIn : MagentoImportFacade.vb -> Methods: GetMagentoAttributeList()
+   Parameter : ModifiedAfter (optional)
+   Return a list of all attributes with an option to only get those modified after a specified date/time
+   
+5. API : Lerryn_LBSapi.lbsGetAttributeTable
+   SOAPConnectorMethod : GetAttributeTable()
+   UsedIn : MagentoImportFacade.vb -> Methods: GetMagentoAttributeValues()
+   Parameter : 
+   Get the contents of the Attribute table from Magento 
+   
+6. API : Lerryn_LBSapi.lbsGetMaxProductID
+   SOAPConnectorMethod : GetCatalogProductListMaxID()
+   UsedIn : MagentoImportFacade.vb -> Methods: GetMagentoProductList() 
+   Parameter : 
+   Get the maximum product id from the Magento product list 
+   
+7. API : Lerryn_LBSapi.lbsGetProductCustomOptions
+   SOAPConnectorMethod : GetCatalogProductCustomOptions(ProductID) 
+   UsedIn : MagentoImportFacade.vb -> Methods: GetMagentoProductList()
+   Parameter : ProductID
+   Get details of the Custom Options of the specified Product from Magento
+   
+8. API : Lerryn_LBSapi.lbsGetRelatedProducts
+   SOAPConnectorMethod : GetCatalogRelatedProducts(SKU)
+   UsedIn : MagentoImportFacade.vb -> Methods: ProcessMagentoRelatedProducts()
+   Parameter : SKU
+   Get list of Related Products for a specific configurable product from Magento
+   
+9. API : catalog_category.tree
+   SOAPConnectorMethod : GetCatalogTree()
+   UsedIn : MagentoImportFacade.vb -> Methods: GetMagentoCategories() AND ImportCategories()
+   Parameter : 
+   Get the Category Tree from Magento using SOAP API
+   
+10. API : product_attribute.list
+    SOAPConnectorMethod : GetProductAttributeList(AttributeSetID)
+    UsedIn : MagentoImportFacade.vb -> Methods: GetMagentoAttributesForSet()  AND ProcessMagentoXMLKeyValues()
+    Parameter : AttributeSetID
+    Get list and details of product attributes for the specified Attribute Set ID from Magento
+   
+11.API : Lerryn_LBSapi.lbsGetOneProductAttributes
+   SOAPConnectorMethod : GetProductAttributes(ProductID,AttributeSetID) 
+   UsedIn : MagentoImportFacade.vb -> Methods: GetMagentoAttributesSet() AND ProcessMagentoXMLKeyValues()
+   Parameter : ProductID , AttributeSetID
+   Get the Attributes for the Product and its Attribute set 
+   
+12.API : Lerryn_LBSapi.lbsGetProductCustomOptions
+    SOAPConnectorMethod : GetCatalogProductCustomOptions(ProductID)
+   UsedIn : MagentoImportFacade.vb -> Methods: GetMagentoProductList() AND ProcessMagentoSimpleOptionsPt1()
+   Parameter : ProductID
+   Get details of the Custom Options of the specified Product from Magento
+   
+13. API : sales_order_shipment.addComment
+   SOAPConnectorMethod : AddCommentToSalesOrder (OrderIncrementID ,OrderStatus ,OrderComment,NotificationFlag)
+   UsedIn :  MagentoSOAPConnector.vb [note: not used anywhere in import flow]
+   Parameter : OrderIncrementID (string) ,OrderStatus (string) ,
+			   OrderComment (string), NotificationFlag (True or False)
+   Adds a comment to a Sales Order in Magento and also updates Status using SOAP API
+   
+14. API : Lerryn_LBSapi.lbsGetAPIVersion
+   SOAPConnectorMethod : GetAPIVersion()
+   UsedIn : MagentoSOAPConnector.vb -> Method: Login() 
+   Parameter : 
+   Gets the version of the Lerryn API Extension and the Magento Version
+   
+15. API : Lerryn_LBSapi.lbsGetMagentoVersion
+    SOAPConnectorMethod : GetMagentoVersion()
+   UsedIn : MagentoSOAPConnector.vb
+   Parameter : 
+   Return the  Magento Version
+   
+16. API : Lerryn_LBSapi.lbsGetOneProductDetailsByProductID
+   SOAPConnectorMethod : GetCatalogProductListBatch(ProductID,QuantityToReturn , ReturnDeleted)
+   UsedIn : MagentoImportFacade.vb -> Methods: GetMagentoProductList()
+   Parameter : ProductID,QuantityToReturn , ReturnDeleted
+   Get a batch of details from the Magento product list 
+   
+17. API : catalog_product_link.list
+   SOAPConnectorMethod : GetCatalogProductLinks(ProductID,LinkType)
+   UsedIn : MagentoImportFacade.vb -> Methods: ProcessMagentoGroupedProducts()
+   Parameter : ProductID,LinkType
+   Get details of the specified Products (LinkType=Grouped products)from Magento using SOAP API
+   
+18. API : Lerryn_LBSapi.lbsGetConfigurableProductAttributes
+   SOAPConnectorMethod : GetConfigurableProductAttributes(SKU,StoreID)
+   UsedIn : MagentoSOAPConnector.vb [note: not used anywhere in import flow] 
+   Parameter : SKU,StoreID
+   Get list of Attributes for a specific configurable product from Magento
+   
+19. API : Lerryn_LBSapi.lbsGetStoreInfo
+    SOAPConnectorMethod : GetStoreList()
+   UsedIn : MagentoImportFacade.vb -> Methods: GetMagentoStoreList()
+   Parameter : 
+   Get list of Stores from Magento
+   
+20. API : sales_order.hold
+   SOAPConnectorMethod : SalesOrderSetAsHold(OrderID)
+   UsedIn : MagentoSOAPConnector.vb [note: not used anywhere in import flow] 
+   Parameter : OrderID
+   Updates the status of a Sales Order in Magento to Hold
+   
+21. API : sales_order.unhold
+   SOAPConnectorMethod : SalesOrderSetAsUnheld(OrderID)
+   UsedIn : MagentoSOAPConnector.vb [note: not used anywhere in import flow] 
+   Parameter :OrderID 
+   Updates the status of a Sales Order in Magento to UnHold
+   
+22. API : sales_order.cancel
+	SOAPConnectorMethod : SalesOrderSetAsCancel(OrderID)
+   UsedIn : MagentoSOAPConnector.vb [note: not used anywhere in import flow] 
+   Parameter :OrderID 
+   Updates the status of a Sales Order in Magento to Cancel
+   
+23.API : sales_order_shipment.create
+   SOAPConnectorMethod : CreateSalesOrderShipment(OrderID,ItemsShipped,ShipmentComment,SendEmail,IncludeCommentInEmail) 
+   UsedIn : MagentoStatusUpdate.vb -> Methods: DoMagentoOrderStatusUpdate
+   Parameter : OrderID,ItemsShipped,ShipmentComment,SendEmail,IncludeCommentInEmail
+    Parameter Description: 
+	        ItemsShipped = Array of total items (ProductID and Number of products)
+		    SendEmail =Booean value (true/false)
+			IncludeCommentInEmail =Booean value (true/false)
+   
+   Creates a Shipment for the specified Sales Order in Magento
+   
+24. API : sales_order_invoice.create
+   SOAPConnectorMethod : CreateSalesOrderInvoice(OrderID,ItemsShipped,InvoiceComment,SendEmail,IncludeCommentInEmail)
+   UsedIn : MagentoStatusUpdate.vb -> Methods: DoMagentoOrderStatusUpdate
+   Parameter : OrderID,ItemsShipped,InvoiceComment,SendEmail,IncludeCommentInEmail
+    Parameter Description: 
+		    InvoiceComment= string value
+	        ItemsShipped = Array of total items (ProductID and Number of products)
+		    SendEmail =Booean value (true/false)
+			IncludeCommentInEmail =Booean value (true/false)
+   Get details of the Custom Options of the specified Product from Magento
+   
+25.API : product.create
+   SOAPConnectorMethod : CreateCatalogProduct(OrderID,ItemsShipped,ShipmentComment,SendEmail,IncludeCommentInEmail) 
+   UsedIn : MagentoSOAPConnector.vb [note: not used anywhere in import flow] 
+   Parameter : SKU,ProductType,AttributeSet,ProductAttributes,ProductCategories, WebsiteIDs
+    Parameter Description:
+		SKU = String, 
+		ProductType = String, 
+		AttributeSet = String,
+        ProductAttributes 
+		ProductCategories = Integer  
+		WebsiteIDs = Integer
+   
+   Create a new Product with the specified Attributes in Magento.
+   
+26. API : Lerryn_LBSapi.lbsAssignSimplesToConfigurable
+   SOAPConnectorMethod : LinkConfigWithSimpleProducts(ConfigProductID,SimpleProductIDs)
+   UsedIn : MagentoSOAPConnector.vb [note: not used anywhere in import flow] 
+   Parameter : ConfigProductID,SimpleProductIDs
+   Specified Product Configure with Simple product
+   
+27. API : product.update 
+   SOAPConnectorMethod : UpdateCatalogProductDetail(ProductID,ProductAttributes,ProductCategories,WebsiteIDs,IncludeCommentInEmail)
+   UsedIn : MagentoInventoryUpdate.vb -> Methods: DoMagentoInventoryUpdate
+   Parameter : ProductID,ProductAttributes,ProductCategories,WebsiteIDs,IncludeCommentInEmail
+   Updates the specified Attributes in Magento.
+   
+28. API : product_stock.update
+   SOAPConnectorMethod : UpdateCatalogProductStockQty(ProductID ,Quantity, InStock)
+   UsedIn : MagentoInventoryUpdate.vb -> Methods: DoMagentoInventoryUpdate
+   Parameter : ProductID ,Quantity, InStock
+   Updates the Product Stock quantity in Magento
+   
+29.API : product_attribute_set.create
+   SOAPConnectorMethod : CreateProductAttributeSet(AttributeSetName,SkeletonID) 
+   UsedIn : MagentoSOAPConnector.vb [note: not used anywhere in import flow]
+   Parameter : OrderID,ItemsShipped,ShipmentComment,SendEmail,IncludeCommentInEmail
+   Creates a Product AttributeSet in specified SkeletonID
+   
+30. API : product_attribute_set.groupAdd
+   SOAPConnectorMethod : AddGroupToProductAttributeSet(AttributeSetID,GroupName)
+   UsedIn : MagentoSOAPConnector.vb [note: not used anywhere in import flow]
+   Parameter : AttributeSetID,GroupName
+   Add Specified GroupName into specified AttributeSet
+   
+31. API : product_attribute_set.attributeAdd
+   SOAPConnectorMethod : AddAttributeToProductAttributeSet(AttributeSetID ,AttributeID, AttributeGroupID,SortOrder)
+   UsedIn : MagentoSOAPConnector.vb [note: not used anywhere in import flow]
+   Parameter : AttributeSetID ,AttributeID, AttributeGroupID,SortOrder
+   Parameter Description:
+     AttributeGroupID,SortOrder are optional
+   Add attribute to specified attributeset
+   
+32.API : Lerryn_LBSapi.lbsCatalogProductAttributeList
+   SOAPConnectorMethod : GetAttributeList(ModifiedAfter) 
+   UsedIn : MagentoImportFacade.vb -> Methods: GetMagentoAttributeList
+   Parameter : ModifiedAfter (optional)
+   Return a list of all attributes with an option to only get those modified after a specified date/time
+   
+33. API : Lerryn_LBSapi.lbsCatalogProductAttributeInfoList
+   SOAPConnectorMethod : GetAllAttributeValues(ModifiedAfter)
+   UsedIn : MagentoImportFacade.vb -> Methods: GetMagentoAttributeList
+   Parameter : ModifiedAfter (optional)
+   Return a list of all attributes values with an option to only get those modified after a specified date/time
+   
+34.API : customer.info
+   SOAPConnectorMethod : GetCustomerDetail( CustomerID) 
+   UsedIn : MagentoSOAPConnector.vb [note: not used anywhere in import flow]
+   Parameter : CustomerID
+   Get details of the specified Customer from Magento
+   
+35. API : customer_address.list
+   SOAPConnectorMethod : GetCustomerAddressList(CustomerID)
+   UsedIn : MagentoSOAPConnector.vb [note: not used anywhere in import flow]
+   Parameter : CustomerID
+   Get list and details of Addresses for the specified customer from Magento
+    
