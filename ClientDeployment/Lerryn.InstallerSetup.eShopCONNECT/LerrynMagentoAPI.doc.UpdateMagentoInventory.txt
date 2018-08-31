@@ -1,23 +1,54 @@
+Connected Business updates to Magento Inventory
+As of 8/2018 documented by staff at www.dynenttech.com
+
+------------------------------------------------------------------------------------------------------
+
+SUMMARY:
+
+If the option to update Magento inventory is turned off the the connector configuration, these updates do not take place.
+
+Check to see if changes have taken place to inventory items or qantity, if yes, update Magento.
+
+If a new item has been added to CB (event 100)
+	Add item to Magento
+
+Publish matrix item
+	Update Magento
+
+If the item has been changed in CB
+	Update Magento
+
+If the quantity on hand has changed in CB
+	Update Magento
+
+------------------------------------------------------------------------------------------------------
+
+DETAILS:
+
+
 
 Magento Inventory Updates:
 
 
-- Check for 'InhibitInventoryUpdates' is enable
+- Check to see if 'InhibitInventoryUpdates' is enabled (this is a connector option in the UI)
+
 - Check for inventory updates. (Get all Inventory Details at CB)
     [read records from CB tables : ReadInventoryItem,ReadInventoryItemDescription,
 	 ReadInventorySpecialPricing_DEV000221, ReadInventoryMagentoDetails_DEV000221,
 	 ReadInventoryMagentoTagDetails_DEV000221	
 	]
+
 - Ignore records already marked as complete 
      Table :LerrynImportExportInventoryActionStatus_DEV000221
 	 Column: ActionComplete_DEV000221
+
 - For Other which are not completed, they are processed as per there Stastus.
   
   Table : LerrynImportExportInventoryActionStatus_DEV000221
   Column :InventoryStatus_DEV000221
   
    following statusses are considered for inventory update :
-    100 - New Item
+	100 - New Item
 	150 - Publish Matrix Group Related Products
 	200,105 : Updated Item 
 	205: Updated Magento Tag/Category
