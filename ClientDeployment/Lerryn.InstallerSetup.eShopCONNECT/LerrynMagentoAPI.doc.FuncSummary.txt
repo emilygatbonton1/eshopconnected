@@ -1,5 +1,5 @@
 
-Lerryn API Method calls Details 
+Lerryn API Function Summary
 As of 8/2018 documented by staff at www.dynenttech.com
 
 1.  API : sales_order.list

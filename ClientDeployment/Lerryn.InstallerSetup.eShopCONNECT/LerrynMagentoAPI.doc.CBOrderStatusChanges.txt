@@ -1,0 +1,123 @@
+
+Connected Business updates to Magento during CB order processing
+As of 8/2018 documented by staff at www.dynenttech.com
+
+--------------------------------------------------------------------------------------
+
+SUMMARY:
+
+When the CB order is shipped in CB (event 600 below), Magento functions are called to 
+- Create a shipment in Magento
+- Adds the tracking number to the shipment in Magento
+- Creates an invoice from the order in Magento
+
+No other order status changes trigger updates to Magento
+
+--------------------------------------------------------------------------------------
+
+CB ORDER STATUS CHANGE EVENTS:
+
+100- New Order
+105- New Item
+200- Back Order
+205- New back order item
+305- Item order Qty change
+310- Item order price change
+350- Item Deleted
+500- Order Voided
+600- Order Shipped
+
+--------------------------------------------------------------------------------------
+
+DETAILS:	
+
+status 100 : New Order
+ Nothing to update in Magento for new Order imported.
+ Only changes at CB side.
+ 
+status 105 : New Item
+  Nothing has update in Magento .
+  Only changes at CB side.
+    Table: LerrynImportExportActionStatus_DEV000221
+	Column: ActionComplete_DEV000221 set to "True"
+
+status : 200- Back Order
+    Nothing to update in Magento .
+	Only changes at CB side.
+    Table: LerrynImportExportActionStatus_DEV000221
+	Column: ActionComplete_DEV000221 set to "True"
+
+status : 205- New Back Order Item
+    Nothing to update in Magento .
+    Only changes at CB side.
+    Table: LerrynImportExportActionStatus_DEV000221
+	Column: ActionComplete_DEV000221 set to "True"
+
+status : 305- Item Order Qty changed
+    Nothing to update in Magento .
+	Only changes at CB side.
+    Table: LerrynImportExportActionStatus_DEV000221
+	Column: ActionComplete_DEV000221 set to "True"
+
+status : 310- Item Order Price changed
+    Nothing to update in Magento .
+	Only changes at CB side.
+    Table: LerrynImportExportActionStatus_DEV000221
+	Column: ActionComplete_DEV000221 set to "True"
+
+status : 350- Item Deleted
+    Nothing to update in Magento .
+	Only changes at CB side.
+    Table: LerrynImportExportActionStatus_DEV000221
+	Column: ActionComplete_DEV000221 set to "True"
+
+status : 500- Order Voided
+	Nothing to update in Magento .
+	Only changes at CB side.
+    Table: LerrynImportExportActionStatus_DEV000221
+	Column: ActionComplete_DEV000221 set to "True"
+	
+status : 600- order Shipped
+
+	 CB Table :CustomerInvoiceDetail
+     Check customer invoice details for items shipped.
+	 Check QuantityOrdered and QuantityShipped
+	 
+	Codition1 : if All Items Delivered from order
+		- Create Magento Shipment
+		    Method: CreateSalesOrderShipment(OrderID,ItemsShipped,ShipmentComment,SendEmail,IncludeCommentInEmail)
+			API : sales_order_shipment.create
+			
+		Magento returns xml after creating shipment.
+		Get Shipment ID for Add Tracking Number from xml
+		Get tracking numbers for order from CB
+		Check if carrier is recognized by Magento
+		  like : "dhl","dhlint", "fedex" , "ups", "usps"  
+		  if none of the above then set default as "custom"
+		  
+		- Add Tracking Number ToShipment at Magento
+			Method: AddTrackingNoToShipment(ShipmentID ,CarrierCode,TrackingTitle)
+			API : sales_order_shipment.addTrack
+			
+		- Creates a Invoice for Order in Magento 
+		    API : sales_order_invoice.create
+			Method : CreateSalesOrderInvoice(OrderID,ItemsShipped,InvoiceComment,SendEmail,IncludeCommentInEmail)
+			
+		if any of the above process failed send a error mail as "Unable to create Magento Sales Order Shipment"
+		
+	Condition2 : if Some Items Delivered from order
+	
+		-  partial delivery only, Check for does Magento API support Partial Shipments.
+		   (ActiveMagentoSettings.APISupportsPartialShipments)
+		   IF yes
+				same process will followed as 
+				- Create Magento Shipment.
+				- Add Tracking Number ToShipment at Magento.
+				- Creates a Invoice for Order in Magento. 
+				
+				if any of the above process failed send a error mail as "Unable to create Magento Sales Order Shipment"
+		   Else
+		     Nothing to update in Magento .
+			 Only changes at CB side.
+			 Table: LerrynImportExportActionStatus_DEV000221
+			 Column: ActionComplete_DEV000221 set to "True"

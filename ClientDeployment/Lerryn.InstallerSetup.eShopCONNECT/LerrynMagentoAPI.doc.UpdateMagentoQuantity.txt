@@ -1,0 +1,71 @@
+
+Magento Inventory Updates:
+
+
+- Check for 'InhibitInventoryUpdates' is enable
+- Check for inventory updates. (Get all Inventory Details at CB)
+    [read records from CB tables : ReadInventoryItem,ReadInventoryItemDescription,
+	 ReadInventorySpecialPricing_DEV000221, ReadInventoryMagentoDetails_DEV000221,
+	 ReadInventoryMagentoTagDetails_DEV000221	
+	]
+- Ignore records already marked as complete 
+     Table :LerrynImportExportInventoryActionStatus_DEV000221
+	 Column: ActionComplete_DEV000221
+- For Other which are not completed, they are processed as per there Stastus.
+  
+  Table : LerrynImportExportInventoryActionStatus_DEV000221
+  Column :InventoryStatus_DEV000221
+  
+   following statusses are considered for inventory update :
+    100 - New Item
+	150 - Publish Matrix Group Related Products
+	200,105 : Updated Item 
+	205: Updated Magento Tag/Category
+	300: Deleted Item
+	1000 : Stock Quantity changed
+	
+	
+	Status :100 
+	
+	  - verify the item at CB. 
+	  - Create that item to Magento 
+	     API : product.create
+	     Method: CreateCatalogProduct(SKU, ProductType, AtributeSet, ProductAttributes, ProductCategoryList, WebsiteList) 
+	  - Magento returns a xml after create item
+	  - Get Magento Product ID from xml
+	  - Update CB Table with returned ProductID
+	      Table : InventoryMagentoDetails_DEV000221 
+		  Column : MagentoProductID_DEV000221 
+		UPDATE InventoryMagentoDetails_DEV000221 SET MagentoProductID_DEV000221	=<<ID returned from Magento >>	 
+      -  Mark row as complete.
+
+    Status : 150
+	
+	  CB Table: InventoryItemMagentoSummaryView_DEV000221
+	  Conditions: ItemType = 'Matrix Item' AND Publish_DEV000221 = 1
+	  
+	  -Magento Method used:
+	  Method: LinkConfigWithSimpleProducts(ConfigProductID,SimpleProductIDs)
+	  API : Lerryn_LBSapi.lbsAssignSimplesToConfigurable
+	
+  	  -CB changes to mark this row as completed.
+	  
+	Status : 1000
+	
+		- Verify the item and its changes at CB
+		- update Stock at Magento.
+		    Method : UpdateCatalogProductStockQty(ProductID ,Quantity, InStock)
+		    API : product_stock.update
+		
+	Status 200,105 :
+	
+		- Gets updated product details from CB
+		- Update Item to Magento 
+		  Method: UpdateCatalogProductDetail(ProductID,ProductAttributes,ProductCategories,WebsiteIDs,IncludeCommentInEmail)
+		  API : product.update 
+		  
+		- Makr Item as completed in CB.
+		
+	Status 300 :
+	
+	     <<There is no any code block created for delete case >>
