@@ -55,7 +55,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>..\..\DLL\</OutputPath>
+    <OutputPath>..\..\..\DLL\</OutputPath>
     <DocumentationFile>bin\Debug\Lerryn.Business.eShopCONNECT.xml</DocumentationFile>
     <DebugType>full</DebugType>
     <PlatformTarget>x86</PlatformTarget>
@@ -77,7 +77,7 @@
     <Import Include="System.Text" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\GlobalAssemblyInfo.vb">
+    <Compile Include="..\..\..\GlobalAssemblyInfo.vb">
       <Link>GlobalAssemblyInfo.vb</Link>
     </Compile>
     <Compile Include="ErrorNotification.vb" />
@@ -111,10 +111,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Program Files (x86)\Connected Business 18.2 Client\Interprise.Presentation.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Lerryn.Framework.ImportExport, Version=18.2.6707.25805, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLL\Lerryn.Framework.ImportExport.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -122,6 +118,12 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\Lerryn.Framework.eShopCONNECT\Lerryn.Framework.ImportExport.vbproj">
+      <Project>{b6930289-05b4-493a-b92e-7c71406617cf}</Project>
+      <Name>Lerryn.Framework.ImportExport</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
   <PropertyGroup>

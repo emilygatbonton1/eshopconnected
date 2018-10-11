@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\DLL\</OutputPath>
+    <OutputPath>..\..\..\DLL\</OutputPath>
     <DefineConstants>
     </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -92,7 +92,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\GlobalAssemblyInfo.vb">
+    <Compile Include="..\..\..\GlobalAssemblyInfo.vb">
       <Link>GlobalAssemblyInfo.vb</Link>
     </Compile>
     <Compile Include="DatasetComponent\ImportExportDataset.Designer.vb">

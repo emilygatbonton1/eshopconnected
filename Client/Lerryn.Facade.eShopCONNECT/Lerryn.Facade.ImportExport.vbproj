@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\DLL\</OutputPath>
+    <OutputPath>..\..\..\DLL\</OutputPath>
     <DefineConstants>
     </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -180,7 +180,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\GlobalAssemblyInfo.vb">
+    <Compile Include="..\..\..\GlobalAssemblyInfo.vb">
       <Link>GlobalAssemblyInfo.vb</Link>
     </Compile>
     <Compile Include="AmazonImportFacade.vb" />
@@ -223,6 +223,10 @@
     <Content Include="Web References\ASPDotNetStorefront\ipx.disco" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\ClientServer\Lerryn.Business.eShopCONNECT\Lerryn.Business.ImportExport.vbproj">
+      <Project>{b20e269e-5227-49b6-afa3-370a9be16752}</Project>
+      <Name>Lerryn.Business.ImportExport</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Shared\Lerryn.Extendable.eShopCONNECT\Lerryn.Extendable.ImportExport.vbproj">
       <Project>{0e11cedd-02ad-4511-941a-429c4b7bdb52}</Project>
       <Name>Lerryn.Extendable.ImportExport</Name>

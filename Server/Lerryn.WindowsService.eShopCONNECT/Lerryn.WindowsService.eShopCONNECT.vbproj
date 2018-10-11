@@ -25,7 +25,7 @@
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>..\..\DLL\</OutputPath>
+    <OutputPath>..\..\..\DLL\</OutputPath>
     <DocumentationFile>Lerryn.WindowsService.eShopCONNECT.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>

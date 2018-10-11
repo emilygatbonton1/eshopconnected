@@ -265,7 +265,9 @@ Public Class ErrorNotification
                             'Use Interprise business rule to send notification
                             Dim emailMessageRule As Interprise.Extendable.Base.Business.CRM.IEmailMessageInterface = New Interprise.Business.Base.CRM.EMailMessageRule()
                             Dim errorMessage As String = String.Empty
-                            emailMessageRule.SendEmail(toAddress, ccAddress, strSubject, strNotificationXML, errorMessage)
+
+                            'TODO: email sending
+                            'emailMessageRule.SendEmail(toAddress, ccAddress, strSubject, strNotificationXML, errorMessage)
                         End If
                     End If
                     ' end of code replaced TJS 07/01/11
@@ -394,7 +396,8 @@ Public Class ErrorNotification
                                 'Use Interprise business rule to send notification
                                 Dim emailMessageRule As Interprise.Extendable.Base.Business.CRM.IEmailMessageInterface = New Interprise.Business.Base.CRM.EMailMessageRule()
                                 Dim errorMessage As String = String.Empty
-                                emailMessageRule.SendEmail(toAddress, ccAddress, strSubject, strNotificationXML, errorMessage)
+                                'TODO: Emily :  email sending
+                               ' emailMessageRule.SendEmail(toAddress, ccAddress, strSubject, strNotificationXML, errorMessage)
 
                             Catch ex As Exception
                                 WriteToLogFileOrEvent(LOG_MESSAGE_TYPE_WARNING, "Unable to send error notification - " & ex.Message)
@@ -541,7 +544,8 @@ Public Class ErrorNotification
                                 'Use Interprise business rule to send notification
                                 Dim emailMessageRule As Interprise.Extendable.Base.Business.CRM.IEmailMessageInterface = New Interprise.Business.Base.CRM.EMailMessageRule()
                                 Dim errorMessage As String = String.Empty
-                                emailMessageRule.SendEmail(toAddress, ccAddress, strSubject, strNotificationXML, errorMessage)
+                                'TODO: Emily :  email sending
+                                'emailMessageRule.SendEmail(toAddress, ccAddress, strSubject, strNotificationXML, errorMessage)
 
                             Catch ex As Exception
                                 WriteToLogFileOrEvent(LOG_MESSAGE_TYPE_WARNING, "Unable to send error notification - " & ex.Message) ' TJS 06/10/10
@@ -638,7 +642,9 @@ Public Class ErrorNotification
                                 'Use Interprise business rule to send notification
                                 Dim emailMessageRule As Interprise.Extendable.Base.Business.CRM.IEmailMessageInterface = New Interprise.Business.Base.CRM.EMailMessageRule()
                                 Dim errorMessage As String = String.Empty
-                                emailMessageRule.SendEmail(toAddress, ccAddress, strSubject, strNotificationXML, errorMessage)
+
+                                'TODO: Emily :  email sending
+                                'emailMessageRule.SendEmail(toAddress, ccAddress, strSubject, strNotificationXML, errorMessage)
 
                             Catch ex As Exception
                                 WriteToLogFileOrEvent(LOG_MESSAGE_TYPE_WARNING, "Unable to send error notification - " & ex.Message) ' TJS 06/10/10

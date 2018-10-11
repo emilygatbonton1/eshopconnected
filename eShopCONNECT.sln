@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{42F0D767-679F-4CE6-A401-F7260A631844}"
 EndProject
@@ -24,6 +24,27 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lerryn.WindowsService.eShopCONNECT.UnitTest", "Server\Lerryn.WindowsService.eShopCONNECT.UnitTest\Lerryn.WindowsService.eShopCONNECT.UnitTest.csproj", "{F37EC2B8-3EBE-4605-9C0B-591C645F0F0C}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Lerryn.Business.ImportExport", "ClientServer\Lerryn.Business.eShopCONNECT\Lerryn.Business.ImportExport.vbproj", "{B20E269E-5227-49B6-AFA3-370A9BE16752}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PrecompiledWeb", "http://localhost:63343", "{26D0E860-4C4E-42AE-BE7E-31988586AD55}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_63343"
+		Debug.AspNetCompiler.PhysicalPath = "PrecompiledWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63343\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_63343"
+		Release.AspNetCompiler.PhysicalPath = "PrecompiledWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63343\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "PrecompiledWeb\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,6 +134,16 @@ Global
 		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Release|Mixed Platforms.Build.0 = Release|x86
 		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Release|x86.ActiveCfg = Release|x86
 		{B20E269E-5227-49B6-AFA3-370A9BE16752}.Release|x86.Build.0 = Release|x86
+		{26D0E860-4C4E-42AE-BE7E-31988586AD55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D0E860-4C4E-42AE-BE7E-31988586AD55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D0E860-4C4E-42AE-BE7E-31988586AD55}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{26D0E860-4C4E-42AE-BE7E-31988586AD55}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{26D0E860-4C4E-42AE-BE7E-31988586AD55}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{26D0E860-4C4E-42AE-BE7E-31988586AD55}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D0E860-4C4E-42AE-BE7E-31988586AD55}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{26D0E860-4C4E-42AE-BE7E-31988586AD55}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{26D0E860-4C4E-42AE-BE7E-31988586AD55}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{26D0E860-4C4E-42AE-BE7E-31988586AD55}.Release|x86.ActiveCfg = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

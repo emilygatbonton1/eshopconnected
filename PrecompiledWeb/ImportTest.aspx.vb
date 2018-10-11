@@ -116,7 +116,7 @@ Partial Class ImportTest
         Try
             ' try creating the 
             eShopCONNECTDatasetGateway = New Lerryn.Framework.ImportExport.DatasetGateway.ImportExportDatasetGateway ' TJS 11/02/09
-            eShopCONNECTFacade = New Lerryn.Facade.ImportExport.ImportExportConfigFacade(eShopCONNECTDatasetGateway, New Lerryn.Business.ImportExport.ErrorNotification, PRODUCT_CODE, PRODUCT_NAME) ' TJS 11/02/09 TJS 18/03/11 TJS 10/06/12
+            eShopCONNECTFacade = New Lerryn.Facade.ImportExport.ImportExportConfigFacade(eShopCONNECTDatasetGateway, New Lerryn.Facade.ImportExport.ErrorNotification, PRODUCT_CODE, PRODUCT_NAME) ' TJS 11/02/09 TJS 18/03/11 TJS 10/06/12 EMILY 10.11.2018
 
             If Not eShopCONNECTFacade.IsActivated Then ' TJS 11/02/09
                 ResponseXML.Value = "eShopCONNECT is not Activated." & vbCrLf & vbCrLf & "Please select the Activation Wizard on the Utilities/Setup menu of the eCommerce module in " & IS_PRODUCT_NAME & "." ' TJS 11/02/09 TJS 24/08/12

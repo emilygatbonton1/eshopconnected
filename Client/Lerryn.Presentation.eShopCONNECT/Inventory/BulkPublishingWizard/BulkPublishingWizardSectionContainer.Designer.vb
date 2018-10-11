@@ -638,7 +638,6 @@ Partial Class BulkPublishingWizardSectionContainer
         '
         Me.LayoutControlItem1.Control = Me.cbeInventoryTypeFilter
         Me.LayoutControlItem1.CustomizationFormText = "Inverntory Item Filter"
-        Me.LayoutControlItem1.Drag = False
         Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
         Me.LayoutControlItem1.ReadOnly = False
@@ -651,7 +650,6 @@ Partial Class BulkPublishingWizardSectionContainer
         '
         Me.LayoutControlItem2.Control = Me.BaseSearchDashboardItemToPublish
         Me.LayoutControlItem2.CustomizationFormText = "LayoutControlItem2"
-        Me.LayoutControlItem2.Drag = False
         Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 50)
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
         Me.LayoutControlItem2.ReadOnly = False
@@ -666,7 +664,6 @@ Partial Class BulkPublishingWizardSectionContainer
         '
         Me.LayoutControlItemAlreadyPubNote.Control = Me.lblAlreadyPublishedNote
         Me.LayoutControlItemAlreadyPubNote.CustomizationFormText = "LayoutControlItemAlreadyPubNote"
-        Me.LayoutControlItemAlreadyPubNote.Drag = False
         Me.LayoutControlItemAlreadyPubNote.Location = New System.Drawing.Point(261, 0)
         Me.LayoutControlItemAlreadyPubNote.Name = "LayoutControlItemAlreadyPubNote"
         Me.LayoutControlItemAlreadyPubNote.ReadOnly = False
@@ -681,7 +678,6 @@ Partial Class BulkPublishingWizardSectionContainer
         '
         Me.LayoutItemPublishedOtherInstances1.Control = Me.chkPublishedOtherInstances
         Me.LayoutItemPublishedOtherInstances1.CustomizationFormText = "LayoutItemPublishedOtherInstances1"
-        Me.LayoutItemPublishedOtherInstances1.Drag = False
         Me.LayoutItemPublishedOtherInstances1.Location = New System.Drawing.Point(0, 26)
         Me.LayoutItemPublishedOtherInstances1.Name = "LayoutItemPublishedOtherInstances1"
         Me.LayoutItemPublishedOtherInstances1.ReadOnly = False
@@ -696,7 +692,6 @@ Partial Class BulkPublishingWizardSectionContainer
         '
         Me.LayoutItemPublishedOtherInstances2.Control = Me.cbePublishedOtherInstances
         Me.LayoutItemPublishedOtherInstances2.CustomizationFormText = "LayoutItemPublishedOtherInstances2"
-        Me.LayoutItemPublishedOtherInstances2.Drag = False
         Me.LayoutItemPublishedOtherInstances2.Location = New System.Drawing.Point(299, 26)
         Me.LayoutItemPublishedOtherInstances2.Name = "LayoutItemPublishedOtherInstances2"
         Me.LayoutItemPublishedOtherInstances2.ReadOnly = False
@@ -711,7 +706,6 @@ Partial Class BulkPublishingWizardSectionContainer
         '
         Me.LayoutControlItem6.Control = Me.lblSpacer2
         Me.LayoutControlItem6.CustomizationFormText = "LayoutControlItem6"
-        Me.LayoutControlItem6.Drag = False
         Me.LayoutControlItem6.Location = New System.Drawing.Point(453, 26)
         Me.LayoutControlItem6.Name = "LayoutControlItem6"
         Me.LayoutControlItem6.ReadOnly = False
@@ -726,7 +720,6 @@ Partial Class BulkPublishingWizardSectionContainer
         '
         Me.LayoutControlItem3.Control = Me.btnAdditionalFilters
         Me.LayoutControlItem3.CustomizationFormText = "LayoutControlItem3"
-        Me.LayoutControlItem3.Drag = False
         Me.LayoutControlItem3.Location = New System.Drawing.Point(786, 0)
         Me.LayoutControlItem3.Name = "LayoutControlItem3"
         Me.LayoutControlItem3.ReadOnly = False
@@ -741,7 +734,6 @@ Partial Class BulkPublishingWizardSectionContainer
         '
         Me.LayoutControlItem4.Control = Me.lblSpacer1
         Me.LayoutControlItem4.CustomizationFormText = "LayoutControlItem4"
-        Me.LayoutControlItem4.Drag = False
         Me.LayoutControlItem4.Location = New System.Drawing.Point(732, 0)
         Me.LayoutControlItem4.Name = "LayoutControlItem4"
         Me.LayoutControlItem4.ReadOnly = False
